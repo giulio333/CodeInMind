@@ -15,6 +15,8 @@ export default defineConfig({
     math: true
   },
   themeConfig: {
+    logo: '/logo.png',
+
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
@@ -34,6 +36,12 @@ export default defineConfig({
               items: [
                 { text: 'Equazioni Differenziali Ordinarie', link: '/math/equazioni_differenziali/eq_diff_ordinarie' },
                 { text: 'Equazioni Differenziali Lineari Primo Ordine', link: '/math/equazioni_differenziali/eq_lineari_primo_ordine' },
+              ]
+            },
+            {
+              text: 'Integrali Impropri',
+              items: [
+                { text: 'Integrabilità in senso Improprio', link: '/math/integrali_impropri/' },
               ]
             }
           ]
