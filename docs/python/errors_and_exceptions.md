@@ -10,19 +10,6 @@ A tal proposito esploreremo il blocco `try-except`, come utilizzarlo correttamen
 
 ## Introduzione alle Eccezioni in Python
 
-```python:line-numbers
-def fib(n):
-    if n < 0:
-        raise ValueError("must be non-negative")
-    elif n == 0 or n == 1:
-        return n
-    else:
-        return fib(n - 1) + fib(n - 2)
-
-print(fib(10))
-```
-<Editor id="fib" />
-
 ::: tip Definizione
 In Python, un'eccezione è un evento che interrompe il normale flusso di un programma. 
 :::
