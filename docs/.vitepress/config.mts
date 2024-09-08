@@ -6,23 +6,35 @@ export default defineConfig({
   base: '/CodeInMind/',
   title: "Code In Mind",
   description: "A Terea documentation",
-  head: [['link', { rel: 'icon', href: '/CodeInMind/favicon.ico' }]],
+  head: [
+    ['link', 
+      { rel: 'icon', href: '/CodeInMind/favicon.ico' }
+    ]
+  ],
+  
   vite: {
     plugins: [
       vitepressPythonEditor(),
     ],
   },
   markdown: {
-    math: true
+    math: true,
+    image: {
+      lazyLoading: true
+    }
   },
   themeConfig: {
     logo: '/logo.png',
-
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2024-present Evan You'
+    },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Python', link: '/python' },
       { text: 'Math', link: '/math' },
+      { text: 'Tools', link: '/tools' },
     ],
 
     sidebar: {
@@ -57,6 +69,20 @@ export default defineConfig({
           items: [
             { text: 'Index', link: '/python/' },
             { text: 'Errors and Exceptions', link: '/python/errors_and_exceptions' },
+          ]
+        }
+      ],
+      '/tools/': [
+        {
+          text: 'Tools',
+          items: [
+            {
+              text: 'GitHub',
+              items: [
+                { text: 'Introduzione', link: '/tools/github/' },
+                { text: 'Workflow' , link: '/tools/github/workflow' },
+              ]
+            },
           ]
         }
       ]
