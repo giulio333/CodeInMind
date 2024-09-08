@@ -6,6 +6,7 @@ export default defineConfig({
   base: '/CodeInMind/',
   title: "Code In Mind",
   description: "A Terea documentation",
+  head: [['link', { rel: 'icon', href: '/CodeInMind/favicon.ico' }]],
   vite: {
     plugins: [
       vitepressPythonEditor(),
