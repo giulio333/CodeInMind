@@ -3,7 +3,7 @@ import { vitepressPythonEditor } from 'vitepress-python-editor/vite-plugin'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/code-in-mind/',
+  base: '/CodeInMind/',
   title: "Code In Mind",
   description: "A Terea documentation",
   vite: {
