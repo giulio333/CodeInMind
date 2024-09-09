@@ -24,7 +24,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    logo: '/logo.png',
+    logo: 'logo.png',
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2024-present Evan You'
