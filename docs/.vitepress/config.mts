@@ -45,6 +45,13 @@ export default defineConfig({
           text: 'Math',
           items: [
             {
+              text: 'Calcolo Differenziale',
+              items: [
+                { text: 'Polinomio di Taylor', link: '/math/calcolo_differenziale/' },
+                { text: 'Tabella Sviluppi', link: '/math/calcolo_differenziale/taylor_tabella' },
+              ]
+            },
+            {
               text: 'Equazioni Differenziali',
               items: [
                 { text: 'Equazioni Differenziali Ordinarie', link: '/math/equazioni_differenziali/eq_diff_ordinarie' },
