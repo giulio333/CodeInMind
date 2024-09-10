@@ -52,7 +52,7 @@ $$
 
 Con $x \in \mathbb{R^+}$, $k \in \mathbb{R}$ e $0 < a < b$.
 
-Dobbiamo distinguere due cas in base al valore assunto da $k$, infatti
+Dobbiamo distinguere due casi in base al valore assunto da $k$, infatti
 
 - se $k = 1$
 
@@ -66,7 +66,7 @@ $$
 \int_{a}^{b} x^{-k}dx = \int_{a}^{b} \frac{1}{x^k}dx = \frac{x^{1 - k}}{1 - k} \bigg\rvert_{a}^{b}
 $$
 
-Ora procediamo fissando, per esempio, $b$ = 1, l'integrale diventa per ogni $k \in \mathbb{R^+}$
+Ora procediamo fissando, per esempio, $b = 1$
 
 - se $k = 1$
 
@@ -137,10 +137,12 @@ $$
 Svolgendo i calcoli si ottiene
 
 $$
-\lim_{a \to 0^+} \int_{a}^{1} \frac{1}{x^{\frac{1}{2}}}dx = \lim_{a \to 0^+} 2 x^{\frac{1}{2}} \bigg\rvert_{a}^{1} = \lim_{a \to 0^+} ( 2 - a^{\frac{1}{2}} ) = 2
+\lim_{a \to 0^+} \int_{a}^{1} \frac{1}{x^{\frac{1}{2}}}dx = \lim_{a \to 0^+} 2 x^{\frac{1}{2}} \bigg\rvert_{a}^{1} = \lim_{a \to 0^+} 2( 1 - a^{\frac{1}{2}} ) = 2
 $$
 
 come mostrato nel teorema precedente.
+
+> In questo caso la funzione è **illimitata** per $x \to 0$.
 
 ![plot](./plot_1.png)
 

@@ -6,7 +6,11 @@ Si tratta di **equazioni** la cui **icognita** è una **funzione** e in cui comp
 
 Se l'incognita è una funzione di una sola variabile indipendente, si parla di **equazioni differenziali ordinarie (EDO)**.
 
-> Indicheremo con $y$ la **variabile dipendente** (o funzione ingognita) e con $x$ la **variabile indipendente**.
+::: info Notazione
+Indicheremo con 
+- $y$ la **variabile dipendente** (o funzione ingognita).
+- con $x$ la **variabile indipendente**.
+:::
 
 La **forma generale** di un'equazione differenziale è del tipo
 
@@ -42,7 +46,7 @@ Detto in modo più semplice, è sufficiente che $y$ e le sue derivate abbiano es
 Un'equazione differenziale si dice **omogenea** se esiste $k \in \mathbb{R}$ tale che
 
 $$
-f(t, \lambda y, ..., \lambda y^{(n)}) = \lambda^k f(t, y, ... , y^{(n)}) \quad \forall \lambda > 0
+f(x, \lambda y, ..., \lambda y^{(n)}) = \lambda^k f(x, y, ... , y^{(n)}) \quad \forall \lambda > 0
 $$
 
 In parole più semplici, per essere omogenea tutti i termini che compaiono nell'equazione dipendono dalla funzione incognita $y$ o dalle sue derivate.
@@ -50,7 +54,7 @@ In parole più semplici, per essere omogenea tutti i termini che compaiono nell'
 Al contrario, una equazione del tipo
 
 $$
-f(t, y, y', ..., y^{(n)}) = g(x) \quad \text{con } g(x) \neq 0
+f(x, y, y', ..., y^{(n)}) = g(x) \quad \text{con } g(x) \neq 0
 $$
 
 si dirà **non omogenea**.
@@ -65,7 +69,7 @@ Un'equazione differenziale si dice **autonoma** se $f$ non dipende da $t$
 Un'equazione differenziale si dice in **forma normale** se la derivata di ordine massimo è determinata epslicitamente in funzione delle altre, ovvero
 
 $$
-y^{(n)}(x) = f(t,y(x),y(x)',...,y^{(n-1)}(x))
+y^{(n)}(x) = f(x,y(x),y(x)',...,y^{(n-1)}(x))
 $$
 
 Questa volta la funzione è definita in $f: A \subseteq \mathbb{R}^{n+1} \to \mathbb{R}$ 
@@ -123,7 +127,7 @@ Si tratta quindi di un'equazione differenziale lineare, del terzo ordine, omogen
 L'equazione differenziale:
 
 - Non è lineare poichè $y$ ha esponente $> 1$.
-- Il suo ordine è 2, infatti il massimo ordine di derivazione è 2 $y''$.
+- Il suo ordine è 2, infatti il massimo ordine di derivazione è 2 ($y''$).
 - Non è omogenea poichè $g(x) \neq 0$.
 
 Si tratta quindi di un'equazione differenziale non lineare, del secondo ordine, non omogenea e a coefficienti costanti.

@@ -15,7 +15,10 @@ y'(x) = a(x)y(x) + b(x) \text{ per } x \in I
 $$
 
 ::: info Notazione
-$y \in C^1(I)$ Significa che y è **continua** in $I$, y è **derivabile** in $I$ e la sua derivata $y'$ è **continua** in $I$.
+$y \in C^1(I)$ significa che 
+- y è **continua** in $I$
+- y è **derivabile** in $I$
+- $y'$ è **continua** in $I$.
 :::
 
 ::: tip Esempio
@@ -30,7 +33,7 @@ dove
 - $a(x) = 2$
 - $b(x) = 0$
 
-**Una funzione $y(x)$ è soluzione di questa equazione se, sostituendo $y(t)$ e le sue derivate nell'equazione, l'uguaglianza è soddisfatta.**
+> **Una funzione $y(x)$ è soluzione di questa equazione se, sostituendo $y(x)$ e le sue derivate nell'equazione, l'uguaglianza è soddisfatta.**
 
 Supponiamo che la soluzione sia $y(t) = Ce^{2x}$ con $C \in \mathbb{R}$.
 
@@ -99,14 +102,17 @@ y' = ay \text{ in } I
 $$
 
 
-si dice **equazione omogenea associata** di $y' = ay + b \text{ in } I $.
+si dice **equazione omogenea associata** di $y' = ay + b \text{ in } I$.
 :::
 
-## Soluzione (o integrale) generale
+## Soluzione Generale
+
+> oppure **Integrale Generale**
+
 Siano 
 
-- $I \subset \mathbb{R}$ un intervallo
-- $a(x) \in C(I)$
+- $I \subset \mathbb{R}$ un intervallo.
+- $a(x) \in C(I)$.
 - $A(x)$ una primitiva di $a(x)$ in $I$.
 
 Tutte le soluzioni di $y'(x) = a(x)y(x)$ in $I$ sono 
@@ -126,12 +132,18 @@ $$
 
 $$
 \begin{cases}
-y' = ay + b \text{ in } I \\
+y' = a(x)y(x) + b(x) \text{ in } I \\
 y(x_0) = y_0
 \end{cases}
 $$
 
-Quindi $Ce^{A(x)} \text{ con } C \in \mathbb{R}$ si dice **soluzione generale** o l'**integrale generale** di $y'(x) = a(x)y(x)$
+Quindi 
+
+$$
+Ce^{A(x)} \text{ con } C \in \mathbb{R}
+$$ 
+
+si dice **soluzione generale** o l'**integrale generale** di $y'(x) = a(x)y(x)$
 
 ::: tip Studio dell'omogenea associata
 Studiamo l'equazione omogenea associata, supponendo che $y$ sia soluzione di $y'=ay$ in $I$ e che $y(x) \neq 0 \quad \forall x \in I$ 
@@ -156,26 +168,30 @@ $
 $
 
 $
-y(x) = e^{\int a(x)dx + C_0} = e^{C_0}e^{\int a(x)dx}
+y(x) = \pm e^{C_0}e^{\int a(x)dx}
 $
 
 Ponendo $C = \pm e^{C_0}$ 
 si ottiene
 
 $$
-y(x) = \pm e^{C_0}e^{\int a(x)dx} = Ce^{\int a(x)dx}
+y(x) = Ce^{\int a(x)dx}
 $$
 
 Quindi 
 
 $$
-y(x) = Ce^{\int a(x)dx} \text{ è soluzione } \forall C \in \mathbb{R}
+y(x) = Ce^{A(x)} \text{ è soluzione } \forall C \in \mathbb{R}
 $$
 :::
 
 ## Soluzione Particolare
 
-Siano $I \subset \mathbb{R}$ un intervallo, $a$ e $b$ $\in C(I)$ e $A(x)$ una primitiva di $a$ in $I$.
+Siano 
+
+- $I \subset \mathbb{R}$ un intervallo.
+- $a$ e $b$ $\in C(I)$.
+- $A(x)$ una primitiva di $a$ in $I$.
 
 Se $\tilde{y}(x)$ è una soluzione di
 
@@ -218,11 +234,11 @@ $$
 
 Rimane il problema di determinare una soluzione $\tilde{y}(x)$ detta **soluzione particolare** dell'**equazione non omogenea**.
 
-> Esistono 2 possibili metodi: Variazione della costante, ad hoc.
+> Esistono 2 possibili metodi: Variazione della costante, ad intuito.
 
 ### Variazione della costante
 
-Si cerca una soluzione nella forma $K(x)e^{A(x)}$, dove $A(x)$ è una primitiva di $a$ in $I$.
+Si cerca una soluzione nella forma $K(x)e^{A(x)}$.
 
 Sostituendo nell'equazione $y'(x) = a(x)y(x) + b(x)$ si ha
 
@@ -312,4 +328,68 @@ Tutte le soluzioni sono
 $$
 y(x) = \frac{3}{2} +Ce^{-2x} \text{, con } C \in \mathbb{R}
 $$
+:::
+
+### Metodo intuitivo
+
+E' possibile ricavare una **soluzione particolare** $\tilde{y}(x)$ di $y' = ay + b$ ad intuito.
+
+::: tip Esempio
+
+Si consideri l'equazione
+
+$$
+y' = 3y + 4x^3 + 2x^2 -x +1 \text{ in } \mathbb{R}
+$$
+
+Supponiamo che la soluzione sia della forma
+
+$$
+\tilde{y}(x) = ax^3 + bx^2 + cx + d
+$$
+
+Sostituendo nell'equazione risulta
+
+$$
+3a^2 + 2bx + c = 3ax^3 + 3bx^2 + 3cx + 3d + 4x^3 + 2x^2 -x +1
+$$
+
+Raccogliendo
+
+$$
+(3a + 4)x^3 + (-3a + 3b + 2)x^2 (-2b +3c -1)x + (-c +3d +1) = 0
+$$
+
+L'equazione è verificata se
+
+$$
+\begin{cases}
+3a + 4 = 0 \\
+-3a + 3b +2 = 0 \\
+-2b +3c -1 = 0 \\
+-c +3d +1 = 0
+\end{cases}
+$$
+
+Ovvero se e solo se
+
+- $a = - \frac{4}{3}$
+- $b = -2$
+- $c = -1$
+- $a = - \frac{2}{3}$
+
+Allora
+
+$$
+\tilde{y}(x) = \frac{4}{3}x^3 - 2x^2 - x - \frac{2}{3}
+$$
+
+E tutte le soluzioni sono 
+
+$$
+\tilde{y}(x) = Ce^{3x} - \frac{4}{3}x^3 - 2x^2 -x - \frac{2}{3} \text{ con } C \in \mathbb{R}
+$$
+
+> Risolvere questa equazione con il **Metodo della Costante** avrebbe portato a calcoli laboriosi.
+
 :::

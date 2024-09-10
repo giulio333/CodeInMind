@@ -25,6 +25,7 @@ export default defineConfig({
   },
   themeConfig: {
     logo: 'logo.png',
+    outline: 'deep',
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2024-present Evan You'
@@ -56,6 +57,7 @@ export default defineConfig({
               items: [
                 { text: 'Equazioni Differenziali Ordinarie', link: '/math/equazioni_differenziali/eq_diff_ordinarie' },
                 { text: 'Equazioni Differenziali Lineari Primo Ordine', link: '/math/equazioni_differenziali/eq_lineari_primo_ordine' },
+                { text: 'Equazioni del Primo Ordine a variabili separabili', link: '/math/equazioni_differenziali/eq_primo_ordine_variabili_separabili' },
               ]
             },
             {
