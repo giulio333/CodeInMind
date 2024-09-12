@@ -12,18 +12,18 @@ hero:
 
 features:
   - icon: 
-      light: /images/guide_l.png
-      dark: /images/guide_d.png
+      light: guide_l.png
+      dark: guide_d.png
     title: Programming Guides
     details: Tutorials on languages, frameworks, and best practices.
   - icon: 
-      light: /images/eng_l.png
-      dark: /images/eng_d.png
+      light: eng_l.png
+      dark: eng_d.png
     title: Math & Engineering
     details: Clear explanations of key concepts with examples.
   - icon: 
-      light: /images/collab_l.png
-      dark: /images/collab_d.png
+      light: collab_l.png
+      dark: collab_d.png
     title: Collaboration Tools
     details: Learn to manage and collaborate on code efficiently.
 ---
