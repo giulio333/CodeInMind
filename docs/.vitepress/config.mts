@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import { vitepressPythonEditor } from 'vitepress-python-editor/vite-plugin'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,12 +10,6 @@ export default defineConfig({
       { rel: 'icon', href: '/CodeInMind/favicon.ico' }
     ]
   ],
-  
-  vite: {
-    plugins: [
-      vitepressPythonEditor(),
-    ],
-  },
   markdown: {
     math: true,
     image: {

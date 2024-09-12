@@ -40,7 +40,7 @@ For offline modifications, you can clone the repository and use the provided Doc
 3. Navigate to the directory containing the Dockerfile.
 4. Build the Docker image with the following command:
    ``` sh
-   docker build -t coding-compendium .
+   docker build -t code-in-mind .
    ```
 5. Run the Docker container:
    ``` sh
