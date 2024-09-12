@@ -5,6 +5,7 @@ export default defineConfig({
   base: '/CodeInMind/',
   title: "Code In Mind",
   description: "A Terea documentation",
+  lastUpdated: true,
   head: [
     ['link', 
       { rel: 'icon', href: '/CodeInMind/favicon.ico' }
@@ -22,6 +23,18 @@ export default defineConfig({
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2024-present Evan You'
+    },
+    search: {
+      provider: 'local',
+    },
+    editLink: {
+      pattern: ({ filePath }) => {
+        if (filePath.startsWith('packages/')) {
+          return `https://github.com/giulio333/CodeInMind/edit/main/${filePath}`
+        } else {
+          return `https://github.com/giulio333/CodeInMind/edit/main/docs/${filePath}`
+        }
+      }
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
