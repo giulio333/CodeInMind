@@ -29,11 +29,10 @@ export default defineConfig({
       { text: 'Python', link: '/python' },
       { text: 'Math', link: '/math' },
       { text: 'Tools', link: '/tools' },
+      { text: 'Ide', link: '/ide' },
     ],
 
     sidebar: {
-      // This sidebar gets displayed when a user
-      // is on `guide` directory.
       '/math/': [
         {
           text: 'Math',
@@ -62,9 +61,6 @@ export default defineConfig({
           ]
         }
       ],
-
-      // This sidebar gets displayed when a user
-      // is on `config` directory.
       '/python/': [
         {
           text: 'Python',
@@ -87,11 +83,25 @@ export default defineConfig({
             },
           ]
         }
+      ],
+      '/ide/': [
+        {
+          text: 'Ide',
+          items: [
+            {
+              text: 'Visual Studio Code',
+              items: [
+                { text: 'Introduzione', link: '/ide/vscode/' },
+                { text: 'Task', link: '/ide/vscode/task' },
+              ]
+            },
+          ]
+        }
       ]
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/giulio333/CodeInMind' }
     ]
   }
 })
