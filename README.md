@@ -1,12 +1,12 @@
-# Coding Compendium
+# CodeInMind
 
-Welcome to the GitHub repository for **Coding Compendium**, a comprehensive resource for programming concepts, languages, and frameworks. This repository aims to help developers, students, and enthusiasts deepen their understanding of various programming topics.
+Welcome to the GitHub repository for **CodeInMind**, a comprehensive resource for programming concepts, languages, and frameworks. This repository aims to help developers, students, and enthusiasts deepen their understanding of various programming topics.
 
-[Explore the Documentation](https://giulio333.github.io/coding-compendium/en/)
+[Explore the Documentation](https://giulio333.github.io/CodeInMind)
 
 ## Project Overview
 
-Coding Compendium offers detailed documentation, code examples, and practical guides on topics such as Python, JavaScript, Java, React, Django, and best practices in software development.
+CodeInMind aims to become a go-to resource for developers and engineers, offering high-quality content on key topics in computer science and engineering. The site will provide detailed documentation, practical code examples, and technical guides on subjects like programming, framework usage, collaboration and code management tools, as well as concepts in applied mathematics and engineering. The goal is to support users’ professional growth by offering resources that facilitate continuous learning and the development of technical skills.
 
 ## How to Modify the Repository
 
@@ -14,9 +14,9 @@ There are two primary ways to modify the repository:
 
 ### 1. Online using Project IDX (Recommended)
 
-You can directly edit and test this project online using [Project IDX](https://idx.google.com/import?url=https://github.com/giulio333/coding-compendium.git). This method is recommended as the repository includes pre-configured settings for the IDX environment. Simply click the link below to open the repository in Project IDX:
+You can directly edit and test this project online using [Project IDX](https://idx.google.com/import?url=https://github.com/giulio333/CodeInMind.git). This method is recommended as the repository includes pre-configured settings for the IDX environment. Simply click the link below to open the repository in Project IDX:
 
-<a href="https://idx.google.com/import?url=https://github.com/giulio333/coding-compendium.git">
+<a href="https://idx.google.com/import?url=https://github.com/giulio333/CodeInMind.git">
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
@@ -40,23 +40,19 @@ For offline modifications, you can clone the repository and use the provided Doc
 3. Navigate to the directory containing the Dockerfile.
 4. Build the Docker image with the following command:
    ``` sh
-   docker build -t coding-compendium .
+   docker build -t code-in-mind .
    ```
 5. Run the Docker container:
    ``` sh
-   docker run -d --name coding-compendium -v /your/path/to/coding-compendium:/app -p 7891:7891 coding-compendium
+   ddocker run --name code-in-mind --network host -p 5173:5173 code-in-mind
    ```
    This will start a local server on port 7891, where you can view the site and ensure everything is rendering as expected.
 
-## Docker Environment
+## Documentation Powered by VitePress
 
-The project includes a Dockerfile that allows contributors to replicate the development environment. This ensures consistent testing across different setups.
+The documentation is generated using [VitePress](https://vitepress.vuejs.org/), a static site generator designed for project documentation. It features search functionality, mobile responsiveness, and support for multiple languages, enhancing the accessibility and usability of the content.
 
-## Documentation Powered by MkDocs Material
-
-The documentation is generated using [MkDocs Material](https://squidfunk.github.io/mkdocs-material/), a static site generator designed for project documentation. It features search functionality, mobile responsiveness, and support for multiple languages, enhancing the accessibility and usability of the content.
-
-## Contributing to Coding Compendium
+## Contributing to CodeInMind
 
 We welcome contributions! Follow these steps:
 
@@ -72,7 +68,3 @@ For more detailed instructions, see the `CONTRIBUTING.md` file.
 ## Issues and Support
 
 If you encounter any issues or have suggestions for improving the project, feel free to submit an issue on GitHub. For urgent issues, you can contact the maintainers directly through GitHub.
-
-## Appreciation and Acknowledgments
-
-Thank you for your interest in **Coding Compendium**! We appreciate your contributions, which help improve this resource for developers and learners worldwide.
