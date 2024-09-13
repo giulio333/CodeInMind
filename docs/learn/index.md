@@ -14,10 +14,8 @@ features:
   - icon: 
       light: /guide_l.png
       dark: /guide_d.png
-    title: Programming Languages
+    title: Programming Guides
     details: Tutorials on languages, frameworks, and best practices.
-    link: learn/programming_languages/
-    linkText: Start
   - icon: 
       light: /eng_l.png
       dark: /eng_d.png
@@ -26,6 +24,6 @@ features:
   - icon: 
       light: /collab_l.png
       dark: /collab_d.png
-    title: Development Tools
+    title: Collaboration Tools
     details: Learn to manage and collaborate on code efficiently.
 ---

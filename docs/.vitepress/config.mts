@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from "vitepress-plugin-mermaid";
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withMermaid({
   base: '/CodeInMind/',
   title: "Code In Mind",
   description: "A Terea documentation",
@@ -39,74 +40,89 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Python', link: '/python' },
-      { text: 'Math', link: '/math' },
-      { text: 'Tools', link: '/tools' },
-      { text: 'Ide', link: '/ide' },
+      { text: 'Learn', link: '/learn/' },
     ],
 
     sidebar: {
-      '/math/': [
+      'learn/math/': [
         {
           text: 'Math',
           items: [
             {
               text: 'Calcolo Differenziale',
               items: [
-                { text: 'Polinomio di Taylor', link: '/math/calcolo_differenziale/' },
-                { text: 'Tabella Sviluppi', link: '/math/calcolo_differenziale/taylor_tabella' },
+                { text: 'Polinomio di Taylor', link: 'learn/math/calcolo_differenziale/' },
+                { text: 'Tabella Sviluppi', link: 'learn/math/calcolo_differenziale/taylor_tabella' },
               ]
             },
             {
               text: 'Equazioni Differenziali',
               items: [
-                { text: 'Equazioni Differenziali Ordinarie', link: '/math/equazioni_differenziali/eq_diff_ordinarie' },
-                { text: 'Equazioni Differenziali Lineari Primo Ordine', link: '/math/equazioni_differenziali/eq_lineari_primo_ordine' },
-                { text: 'Equazioni del Primo Ordine a variabili separabili', link: '/math/equazioni_differenziali/eq_primo_ordine_variabili_separabili' },
-                { text: 'Equazioni del Secondo Ordine', link: '/math/equazioni_differenziali/eq_lineari_secondo_ordine' },
+                { text: 'Equazioni Differenziali Ordinarie', link: 'learn/math/equazioni_differenziali/eq_diff_ordinarie' },
+                { text: 'Equazioni Differenziali Lineari Primo Ordine', link: 'learn/math/equazioni_differenziali/eq_lineari_primo_ordine' },
+                { text: 'Equazioni del Primo Ordine a variabili separabili', link: 'learn/math/equazioni_differenziali/eq_primo_ordine_variabili_separabili' },
+                { text: 'Equazioni del Secondo Ordine', link: 'learn/math/equazioni_differenziali/eq_lineari_secondo_ordine' },
               ]
             },
             {
               text: 'Integrali Impropri',
               items: [
-                { text: 'Integrabilità in senso Improprio', link: '/math/integrali_impropri/' },
+                { text: 'Integrabilità in senso Improprio', link: 'learn/math/integrali_impropri/' },
               ]
             }
           ]
         }
       ],
-      '/python/': [
+      '/learn/programming_languages/python/': [
         {
           text: 'Python',
           items: [
-            { text: 'Index', link: '/python/' },
-            { text: 'Errors and Exceptions', link: '/python/errors_and_exceptions' },
+            { text: 'Home', link: '/learn/programming_languages/python/' },
+            { 
+              text: 'Moduli', 
+              link: '/learn/programming_languages/python/modules/',
+              items: [
+                { text: 'Introduzione', link: '/learn/programming_languages/python/modules/' },
+                { text: 'Namespace', link: '/learn/programming_languages/python/modules/namespace' },
+                { 
+                  text: 'Standard Modules', 
+                  collapsed: true,
+                  link: '/learn/programming_languages/python/modules/standard_modules/',
+                  items: [
+                    { text: 'Random', link: '/learn/programming_languages/python/modules/standard_modules/random' },
+                    { text: 'Platform', link: '/learn/programming_languages/python/modules/standard_modules/platform' },
+                  ]
+                },
+                { text: 'Package', link: '/learn/programming_languages/python/modules/package' },
+              ]
+            },            
+            { text: 'Errors and Exceptions', link: '/learn/programming_languages/python/errors_and_exceptions' },
           ]
         }
       ],
-      '/tools/': [
+      'learn/tools/': [
         {
           text: 'Tools',
           items: [
             {
               text: 'GitHub',
               items: [
-                { text: 'Introduzione', link: '/tools/github/' },
-                { text: 'Workflow' , link: '/tools/github/workflow' },
+                { text: 'Introduzione', link: 'learn/tools/github/' },
+                { text: 'Workflow' , link: 'learn/tools/github/workflow' },
               ]
             },
           ]
         }
       ],
-      '/ide/': [
+      'learn/ide/': [
         {
           text: 'Ide',
           items: [
             {
               text: 'Visual Studio Code',
               items: [
-                { text: 'Introduzione', link: '/ide/vscode/' },
-                { text: 'Task', link: '/ide/vscode/task' },
+                { text: 'Introduzione', link: 'learn/ide/vscode/' },
+                { text: 'Task', link: 'learn/ide/vscode/task' },
               ]
             },
           ]
@@ -117,5 +133,13 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/giulio333/CodeInMind' }
     ]
-  }
+  },
+  mermaid: {
+    // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
+  },
+  // optionally set additional config for plugin itself with MermaidPluginConfig
+  mermaidPlugin: {
+    class: "mermaid my-class", // set additional css classes for parent container 
+  },
 })
+
