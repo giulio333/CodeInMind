@@ -5,6 +5,10 @@ hero:
   name: "Code in Mind"
   text: "Solve and Design"
   tagline: From math to engineering, all will align.
+  image:
+    light: /logo.png
+    dark: /logo.png
+    alt: VitePress
   actions:
     - theme: brand
       text: GitHub Repo
