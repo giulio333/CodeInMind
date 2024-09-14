@@ -3,6 +3,8 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
+
+import Layout from '../Layout.vue'
 import NoteComponent from '../components/NoteComponent.vue'
 import ExerciseComponent from '../components/ExerciseComponent.vue'
 import ImageComponent from '../components/ImageComponent.vue'
@@ -15,10 +17,6 @@ export default {
     app.component('ExerciseComponent', ExerciseComponent)
     app.component('ImageComponent', ImageComponent)
   },
-  Layout: () => {
-    return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-    })
-  },
+  Layout: Layout
 
 } satisfies Theme

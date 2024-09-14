@@ -7,10 +7,13 @@ hero:
   image:
     light: /python.png
     dark: /python.png
-    alt: VitePress
+    alt: Python
   actions:
+    - theme: brand
+      text: Start Learning
+      link: ./modules/
     - theme: alt
-      text: Start
+      text: Packages & Frameworks
       link: ./modules/
 ---
 
