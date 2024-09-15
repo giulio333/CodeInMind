@@ -9,7 +9,7 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: Explore
+      text: Suggestions?
       link: https://github.com/giulio333/CodeInMind
 
 features:

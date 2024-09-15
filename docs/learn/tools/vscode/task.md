@@ -1,4 +1,4 @@
-# Visual Studio Code: Panoramica dei Task e Integrazione con Strumenti Esterni
+# Panoramica dei Task e Integrazione con Strumenti Esterni
 
 ## Introduzione
 

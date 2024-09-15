@@ -27,9 +27,13 @@ features:
       dark: /eng_d.png
     title: Math & Engineering
     details: Clear explanations of key concepts with examples.
+    link: learn/engineering/
+    linkText: Start
   - icon: 
       light: /collab_l.png
       dark: /collab_d.png
     title: Development Tools
     details: Learn to manage and collaborate on code efficiently.
+    link: learn/tools/
+    linkText: Start
 ---

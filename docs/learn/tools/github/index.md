@@ -1,62 +1,60 @@
-# Cos'è GitHub?
+---
+layout: home
+title: GitHub
 
-![alt text](image-1.png)
+hero:
+  text: "GitHub"
+  image:
+    light: /github_l.png
+    dark: /github_d.png
+    alt: GitHub
+  actions:
+    - theme: brand
+      text: Start Learning
+      link: ./introduzione
+---
 
-## GitHub: Una Piattaforma per Sviluppatori
+# Benvenuto nella sezione GitHub
 
-[GitHub](https://github.com/) è una piattaforma web che permette agli sviluppatori di **creare**, **gestire** e **condividere** codice sorgente in modo collaborativo. 
+GitHub è una piattaforma di sviluppo software collaborativa che permette di gestire il controllo di versione dei progetti, facilitando il lavoro in team e la condivisione del codice. Che tu sia uno sviluppatore principiante o esperto, GitHub offre strumenti per migliorare la gestione e l'organizzazione dei tuoi progetti.
 
-Utilizzando [Git](https://git-scm.com/), un **sistema di controllo di versione distribuito**, **GitHub** fornisce una serie di strumenti per facilitare lo sviluppo di software, sia **open-source** che **progetti privati**.
+<ImageComponent src="image-9.png" alt="Image" width="800"/>
 
-Dal 2018, GitHub è di proprietà di Microsoft, ma continua a operare in modo indipendente. La piattaforma ospita oltre 100 milioni di sviluppatori e più di 420 milioni di repository (archivi di codice), diventando la più grande fonte di codice sorgente al mondo.
+## Perché imparare GitHub?
 
-## Funzionalità Chiave
+- **Controllo di versione**: GitHub utilizza Git, il sistema di controllo di versione distribuito, per tracciare le modifiche al codice e lavorare su progetti in maniera collaborativa.
+- **Collaborazione facile**: Grazie alle funzioni di pull request, issue e gestione dei repository, è facile collaborare su progetti open source o privati.
+- **Integrazioni potenti**: GitHub si integra con una vasta gamma di strumenti di sviluppo e CI/CD, come Travis CI, Jenkins e GitHub Actions.
 
-### **Versionamento del Codice**
-![alt text](image-3.png)
+## Argomenti trattati
 
-GitHub sfrutta Git per tracciare e gestire le versioni del codice. Ogni cambiamento può essere registrato tramite commit, e gli sviluppatori possono confrontare versioni diverse, annullare modifiche e collaborare su codice tramite le **pull request**. Questi strumenti permettono a chi sviluppa di lavorare in team in modo efficiente, assicurandosi che nessuna modifica vada persa.
+In questa sezione troverai risorse e guide su vari argomenti legati a GitHub:
 
-### **Gestione dei Problemi (Issues)**
-![alt text](image-2.png)
+- **Repository e Git**  
+  Impara come creare, clonare e gestire repository, e come utilizzare i comandi Git fondamentali.
 
-GitHub include un sistema per gestire **issues**, che permette agli sviluppatori di tracciare bug, richieste di funzionalità e altre problematiche legate al progetto. Gli issues possono essere organizzati con etichette e assegnati a membri del team per una gestione più strutturata.
+- **Branching e pull request**  
+  Approfondisci il lavoro con i branch e come gestire pull request per integrare il codice.
 
-### **Collaborazione**
-![alt text](image-4.png)
+- **Collaborazione su GitHub**  
+  Scopri come lavorare in team su GitHub, utilizzare issue, gestire progetti e utilizzare GitHub Projects.
 
-Una delle caratteristiche più apprezzate di GitHub è la sua capacità di favorire la collaborazione tra sviluppatori. Le **fork** permettono di creare copie di un progetto su cui lavorare in parallelo, mentre le pull request consentono di proporre modifiche al repository originale. Inoltre, GitHub offre **wiki** per documentare progetti e sezioni di discussione per confrontarsi su specifiche tecniche.
+- **GitHub Actions**  
+  Automatizza i flussi di lavoro del tuo progetto con GitHub Actions per l'integrazione continua e il deploy.
 
-### **GitHub Actions**
-![alt text](image.png)
+- **Security e gestione degli accessi**  
+  Impara a proteggere i tuoi repository con le giuste impostazioni di sicurezza e gestione degli accessi.
 
-GitHub supporta **GitHub Actions**, uno strumento che consente di automatizzare workflow legati a continous integration (CI) e continuous deployment (CD). Gli sviluppatori possono impostare pipeline automatizzate per testare, rilasciare e distribuire il loro software direttamente all'interno della piattaforma.
+## Risorse utili
 
-[GitHub Actions documentation](https://docs.github.com/en/actions)
+- [Documentazione ufficiale di GitHub](https://docs.github.com/)
+- [GitHub Learning Lab](https://lab.github.com/)
+- [Community GitHub](https://github.community/)
 
+Che tu stia gestendo un piccolo progetto o collaborando su progetti di larga scala, GitHub offre tutto ciò di cui hai bisogno per facilitare lo sviluppo e il versionamento del codice. Esplora le guide, i tutorial e le risorse in questa sezione per migliorare le tue competenze con GitHub!
 
-### **GitHub Pages**
+---
 
-> [GitHub Pages documentation](https://docs.github.com/en/pages)
+### Partecipa
 
-![alt text](image-5.png)
-
-Un'altra funzionalità interessante è **GitHub Pages**, che permette agli utenti di creare siti web statici direttamente dai loro repository GitHub. Questo è particolarmente utile per documentazioni tecniche, blog personali o la presentazione di progetti.
-
-
-
-### **GitHub Copilot**
-![alt text](image-6.png)
-
-GitHub ha recentemente introdotto **Copilot**, un sistema basato sull'intelligenza artificiale che assiste gli sviluppatori suggerendo automaticamente linee di codice in base a ciò che stanno scrivendo. Questa funzionalità può accelerare notevolmente lo sviluppo, aiutando gli utenti a scrivere codice più velocemente e con meno errori.
-
-## Vantaggi per gli Sviluppatori
-
-GitHub offre numerosi vantaggi a sviluppatori di ogni livello:
-- **Collaborazione Internazionale**: Grazie alla natura distribuita di GitHub, sviluppatori di tutto il mondo possono collaborare su progetti comuni.
-- **Backup del Codice**: Con GitHub, il codice è sempre salvato in cloud, garantendo che nessuna modifica vada persa.
-- **Integrazione con Altri Strumenti**: GitHub si integra facilmente con strumenti di sviluppo popolari come Visual Studio Code, Travis CI e altri.
-
-## Conclusione
-
-GitHub non è solo un repository di codice, ma una piattaforma completa per la gestione e lo sviluppo di progetti software. Le sue funzionalità avanzate come il controllo delle versioni, la gestione degli issues e la collaborazione tra sviluppatori rendono GitHub uno strumento indispensabile per chiunque lavori nel mondo dello sviluppo software.
+Hai un feedback o vuoi richiedere un nuovo argomento su GitHub? [Invia i tuoi suggerimenti](#) e aiutaci a migliorare questa risorsa!
