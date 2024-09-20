@@ -1,11 +1,7 @@
 FROM node:20
 
-WORKDIR /app
+WORKDIR /workspace/CodeInMind/
 
 COPY . .
 
-RUN npm install
-
-EXPOSE 5173
-
-CMD ["npm", "run", "docs:dev"]
+#RUN npm install

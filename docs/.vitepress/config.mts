@@ -19,7 +19,7 @@ export default withMermaid({
     }
   },
   themeConfig: {
-    logo: 'logo.png',
+    logo: '/logo.png',
     outline: 'deep',
     footer: {
       message: 'Released under the MIT License.',
@@ -77,36 +77,36 @@ export default withMermaid({
         {
           text: 'Python',
           items: [
-            { text: 'Home', link: './' },
+            { text: 'Home', link: '/learn/programming_languages/python/' },
             { 
               text: 'Moduli', 
-              link: './modules/',
+              link: '/learn/programming_languages/python/modules/',
               items: [
-                { text: 'Introduzione', link: './modules/' },
-                { text: 'Namespace', link: './modules/namespace' },
+                { text: 'Introduzione', link: '/learn/programming_languages/python/modules/' },
+                { text: 'Namespace', link: '/learn/programming_languages/python/modules/namespace' },
                 { 
                   text: 'Standard Modules', 
                   collapsed: true,
-                  link: './modules/standard_modules/',
+                  link: '/learn/programming_languages/python/modules/standard_modules/',
                   items: [
-                    { text: 'Random', link: './modules/standard_modules/random' },
-                    { text: 'Platform', link: './modules/standard_modules/platform' },
+                    { text: 'Random', link: '/learn/programming_languages/python/modules/standard_modules/random' },
+                    { text: 'Platform', link: '/learn/programming_languages/python/modules/standard_modules/platform' },
                   ]
                 },
-                { text: 'Package', link: './modules/package' },
+                { text: 'Package', link: '/learn/programming_languages/python/modules/package' },
               ]
             },            
-            { text: 'Errors and Exceptions', link: './errors_and_exceptions' },
+            { text: 'Errors and Exceptions', link: '/learn/programming_languages/python/errors_and_exceptions' },
           ]
         }
       ],
-      'learn/tools/github/': [
+      '/learn/tools/github/': [
         {
           text: 'GitHub',
           items: [
-            { text: 'Home', link: './' },
-            { text: 'Introduzione', link: './introduzione' },
-            { text: 'Workflow' , link: './workflow' },
+            { text: 'Home', link: '/learn/tools/github/.' },
+            { text: 'Introduzione', link: '/learn/tools/github/introduzione' },
+            { text: 'Workflow' , link: '/learn/tools/github/workflow' },
           ]
         }
       ],
@@ -115,7 +115,6 @@ export default withMermaid({
           text: 'Visual Studio Code',
           items: [
             { text: 'Home', link: './' },
-            { text: 'Introduzione', link: './' },
             { text: 'Task', link: './task' },
           ]
         }
