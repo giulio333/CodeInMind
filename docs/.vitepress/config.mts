@@ -5,7 +5,7 @@ import { withMermaid } from "vitepress-plugin-mermaid";
 export default withMermaid({
   base: '/CodeInMind/',
   title: "Code In Mind",
-  description: "A Terea documentation",
+  description: "Code In Mind",
   lastUpdated: true,
   head: [
     ['link', 

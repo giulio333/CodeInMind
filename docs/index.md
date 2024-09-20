@@ -36,4 +36,11 @@ features:
     details: Learn to manage and collaborate on code efficiently.
     link: learn/tools/
     linkText: Start
+  - icon: 
+      light: /framework_l.png
+      dark: /framework_d.png
+    title: Frameworks & Libraries
+    details: Explore popular frameworks and libraries for web development.
+    link: learn/frameworks/
+    linkText: Start
 ---
