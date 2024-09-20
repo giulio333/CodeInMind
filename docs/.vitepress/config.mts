@@ -18,6 +18,17 @@ export default withMermaid({
       lazyLoading: true
     }
   },
+  locales: {
+    root: {
+      label: 'Italiano',
+      lang: 'it',
+    },
+    fr: {
+      label: 'English',
+      lang: 'en',
+      link: '/en/' 
+    }
+  },
   themeConfig: {
     logo: '/logo.png',
     outline: 'deep',
