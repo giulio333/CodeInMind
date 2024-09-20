@@ -104,7 +104,7 @@ export default withMermaid({
         {
           text: 'GitHub',
           items: [
-            { text: 'Home', link: '/learn/tools/github/.' },
+            { text: 'Home', link: '/learn/tools/github' },
             { text: 'Introduzione', link: '/learn/tools/github/introduzione' },
             { text: 'Workflow' , link: '/learn/tools/github/workflow' },
           ]
