@@ -18,7 +18,7 @@ hero:
 
 Visual Studio Code (VS Code) è un editor di codice leggero ma potente, supportato da una vasta gamma di estensioni per linguaggi e strumenti di sviluppo. È uno degli editor di codice più popolari tra gli sviluppatori, ideale sia per progetti piccoli che per lo sviluppo su larga scala.
 
-<ImageComponent src="./vscode_example.png" alt="Image" width="800"/>
+![alt text](vscode_example.png)
 
 ## Perché imparare Visual Studio Code?
 

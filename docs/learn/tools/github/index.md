@@ -18,7 +18,7 @@ hero:
 
 GitHub è una piattaforma di sviluppo software collaborativa che permette di gestire il controllo di versione dei progetti, facilitando il lavoro in team e la condivisione del codice. Che tu sia uno sviluppatore principiante o esperto, GitHub offre strumenti per migliorare la gestione e l'organizzazione dei tuoi progetti.
 
-<ImageComponent src="./image-9.png" alt="Image" width="800"/>
+![alt text](image-9.png")
 
 ## Perché imparare GitHub?
 
