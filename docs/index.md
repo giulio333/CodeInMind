@@ -18,7 +18,7 @@ features:
   - icon: 
       light: /guide_l.png
       dark: /guide_d.png
-    title: Linguaggi di Programmazione
+    title: Programming Languages
     details: Tutorials on languages, frameworks, and best practices.
     link: learn/programming_languages/
     linkText: Start

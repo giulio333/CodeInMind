@@ -1,29 +1,7 @@
-import { defineConfig } from 'vitepress'
-import { withMermaid } from 'vitepress-plugin-mermaid';
-import { itConfig } from './config/it';
-import { enConfig } from './config/en';
-
-// https://vitepress.dev/reference/site-config
-export default withMermaid({
-  base: '/CodeInMind/',
-  title: "Code In Mind",
-  description: "Code In Mind",
-  lastUpdated: true,
-  head: [
-    ['link', 
-      { rel: 'icon', href: '/CodeInMind/favicon.ico' }
-    ]
-  ],
-  markdown: {
-    math: true,
-    image: {
-      lazyLoading: true
-    }
-  },
-  locales: {
-    root: enConfig,
-    it: itConfig
-  },
+export const itConfig = {
+  label: 'Italiano',
+  lang: 'it',
+  link: '/it/',
   themeConfig: {
     logo: '/logo.png',
     outline: 'deep',
@@ -43,11 +21,9 @@ export default withMermaid({
         }
       }
     },
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
     ],
-
     sidebar: {
       '/learn/engineering/mathematics/': [
         {
@@ -101,7 +77,7 @@ export default withMermaid({
                 },
                 { text: 'Package', link: '/learn/programming_languages/python/modules/package' },
               ]
-            },            
+            },
             { text: 'Errors and Exceptions', link: '/learn/programming_languages/python/errors_and_exceptions' },
           ]
         }
@@ -126,17 +102,8 @@ export default withMermaid({
         }
       ]
     },
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/giulio333/CodeInMind' }
     ]
-  },
-  mermaid: {
-    // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
-  },
-  // optionally set additional config for plugin itself with MermaidPluginConfig
-  mermaidPlugin: {
-    class: "mermaid my-class", // set additional css classes for parent container 
-  },
-})
-
+  }
+};

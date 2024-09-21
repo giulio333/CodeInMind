@@ -11,36 +11,36 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: GitHub Repo
+      text: Repository GitHub
       link: https://github.com/giulio333/CodeInMind
 
 features:
   - icon: 
       light: /guide_l.png
       dark: /guide_d.png
-    title: Programming Languages
-    details: Tutorials on languages, frameworks, and best practices.
+    title: Linguaggi di Programmazione
+    details: Tutorial su linguaggi, framework e best practice.
     link: learn/programming_languages/
-    linkText: Start
+    linkText: Inizia
   - icon: 
       light: /eng_l.png
       dark: /eng_d.png
-    title: Math & Engineering
-    details: Clear explanations of key concepts with examples.
+    title: Matematica e Ingegneria
+    details: Spiegazioni chiare dei concetti chiave con esempi.
     link: learn/engineering/
-    linkText: Start
+    linkText: Inizia
   - icon: 
       light: /collab_l.png
       dark: /collab_d.png
-    title: Development Tools
-    details: Learn to manage and collaborate on code efficiently.
+    title: Strumenti di Sviluppo
+    details: Impara a gestire e collaborare sul codice in modo efficiente.
     link: learn/tools/
-    linkText: Start
+    linkText: Inizia
   - icon: 
       light: /framework_l.png
       dark: /framework_d.png
-    title: Frameworks & Libraries
-    details: Explore popular frameworks and libraries.
+    title: Framework e Librerie
+    details: Esplora framework e librerie popolari.
     link: learn/frameworks/
-    linkText: Start
+    linkText: Inizia
 ---
