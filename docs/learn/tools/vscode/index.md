@@ -14,47 +14,47 @@ hero:
       link: ./task
 ---
 
-# Benvenuto nella sezione Visual Studio Code
+# Welcome to the Visual Studio Code Section
 
-Visual Studio Code (VS Code) è un editor di codice leggero ma potente, supportato da una vasta gamma di estensioni per linguaggi e strumenti di sviluppo. È uno degli editor di codice più popolari tra gli sviluppatori, ideale sia per progetti piccoli che per lo sviluppo su larga scala.
+Visual Studio Code (VS Code) is a lightweight yet powerful code editor, supported by a wide range of extensions for languages and development tools. It is one of the most popular code editors among developers, ideal for both small projects and large-scale development.
 
-![alt text](vscode_example.png)
+![alt text](/vscode_example.png)
 
-## Perché imparare Visual Studio Code?
+## Why Learn Visual Studio Code?
 
-- **Interfaccia intuitiva**: VS Code offre una UI semplice e pulita, rendendolo facile da usare anche per i principianti.
-- **Ampia gamma di estensioni**: Supporta migliaia di estensioni che aggiungono funzionalità come debugging, gestione di database, e integrazione con Git.
-- **Cross-platform**: Disponibile su Windows, macOS e Linux, VS Code è uno strumento versatile per qualsiasi ambiente di sviluppo.
+- **Intuitive Interface**: VS Code offers a simple and clean UI, making it easy to use even for beginners.
+- **Wide Range of Extensions**: It supports thousands of extensions that add functionalities like debugging, database management, and Git integration.
+- **Cross-platform**: Available on Windows, macOS, and Linux, VS Code is a versatile tool for any development environment.
 
-## Argomenti trattati
+## Topics Covered
 
-In questa sezione troverai risorse e guide su vari argomenti legati a Visual Studio Code:
+In this section, you will find resources and guides on various topics related to Visual Studio Code:
 
-- **Introduzione a Visual Studio Code**  
-  Scopri come installare e configurare VS Code per il tuo sistema operativo.
+- **Introduction to Visual Studio Code**  
+  Learn how to install and configure VS Code for your operating system.
 
-- **Estensioni e personalizzazioni**  
-  Esplora come installare estensioni per migliorare la tua esperienza di sviluppo e personalizzare l'editor.
+- **Extensions and Customizations**  
+  Explore how to install extensions to enhance your development experience and customize the editor.
 
-- **Debugging con VS Code**  
-  Impara a usare il debugger integrato per diversi linguaggi e ambienti.
+- **Debugging with VS Code**  
+  Learn how to use the integrated debugger for different languages and environments.
 
-- **Integrazione con Git**  
-  Scopri come utilizzare Git e GitHub direttamente da VS Code per il controllo del codice sorgente.
+- **Git Integration**  
+  Discover how to use Git and GitHub directly from VS Code for source control.
 
-- **Snippets e automazioni**  
-  Impara a creare snippets di codice e automatizzare attività ripetitive.
+- **Snippets and Automations**  
+  Learn how to create code snippets and automate repetitive tasks.
 
-## Risorse utili
+## Useful Resources
 
-- [Documentazione ufficiale di Visual Studio Code](https://code.visualstudio.com/docs)
-- [Marketplace delle estensioni di VS Code](https://marketplace.visualstudio.com/vscode)
-- [Comunità Visual Studio Code](https://code.visualstudio.com/community)
+- [Official Visual Studio Code Documentation](https://code.visualstudio.com/docs)
+- [VS Code Extensions Marketplace](https://marketplace.visualstudio.com/vscode)
+- [Visual Studio Code Community](https://code.visualstudio.com/community)
 
-Che tu stia scrivendo codice per la prima volta o stia cercando di ottimizzare il tuo flusso di lavoro, Visual Studio Code è l'editor giusto per te. Esplora le guide e le risorse in questa sezione per diventare un esperto di VS Code!
+Whether you are writing code for the first time or looking to optimize your workflow, Visual Studio Code is the right editor for you. Explore the guides and resources in this section to become a VS Code expert!
 
 ---
 
-### Partecipa
+### Participate
 
-Hai un feedback o vuoi richiedere un nuovo argomento su Visual Studio Code? [Invia i tuoi suggerimenti](#) e aiutaci a migliorare questa risorsa!
+Do you have feedback or want to request a new topic on Visual Studio Code? [Submit your suggestions](#) and help us improve this resource!

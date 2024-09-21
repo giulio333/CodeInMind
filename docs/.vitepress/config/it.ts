@@ -22,7 +22,7 @@ export const itConfig = {
       }
     },
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'Home', link: '/it/' },
     ],
     sidebar: {
       '/learn/engineering/mathematics/': [
@@ -55,7 +55,7 @@ export const itConfig = {
           ]
         }
       ],
-      '/learn/programming_languages/python/': [
+      '/it/learn/programming_languages/python/': [
         {
           text: 'Python',
           items: [
@@ -78,7 +78,7 @@ export const itConfig = {
                 { text: 'Package', link: '/learn/programming_languages/python/modules/package' },
               ]
             },
-            { text: 'Errors and Exceptions', link: '/learn/programming_languages/python/errors_and_exceptions' },
+            { text: 'Errori ed Eccezioni', link: '/learn/programming_languages/python/errors_and_exceptions' },
           ]
         }
       ],
