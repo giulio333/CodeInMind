@@ -1,89 +1,89 @@
-# Equazioni Lineari del Primo Ordine
+# First-Order Linear Differential Equations
 
-## Definizione
+## Definition
 
-Dati un intervallo $I \subseteq \mathbb{R}$ e due funzioni $a, b \in C(I)$ e l'**equazione differenziale lineare del primo ordine** data da:
+Given an interval $I \subseteq \mathbb{R}$ and two functions $a, b \in C(I)$, the **first-order linear differential equation** is given by:
 
 $$
 y' = ay + b \text{ in } I
 $$
 
-Allora una funzione $y \in C^1(I)$ si dice **soluzione** se
+Then a function $y \in C^1(I)$ is called a **solution** if
 
 $$
-y'(x) = a(x)y(x) + b(x) \text{ per } x \in I
+y'(x) = a(x)y(x) + b(x) \text{ for } x \in I
 $$
 
-::: info Notazione
-$y \in C^1(I)$ significa che 
-- y è **continua** in $I$
-- y è **derivabile** in $I$
-- $y'$ è **continua** in $I$.
+::: info Notation
+$y \in C^1(I)$ means that 
+- y is **continuous** in $I$
+- y is **differentiable** in $I$
+- $y'$ is **continuous** in $I$.
 :::
 
-::: tip Esempio
-Consideriamo l'equazione differenziale:
+::: tip Example
+Consider the differential equation:
 
 $$
 y'(x) = 2y(x)
 $$
 
-dove
+where
 
 - $a(x) = 2$
 - $b(x) = 0$
 
-> **Una funzione $y(x)$ è soluzione di questa equazione se, sostituendo $y(x)$ e le sue derivate nell'equazione, l'uguaglianza è soddisfatta.**
+> **A function $y(x)$ is a solution to this equation if, by substituting $y(x)$ and its derivatives into the equation, the equality is satisfied.**
 
-Supponiamo che la soluzione sia $y(t) = Ce^{2x}$ con $C \in \mathbb{R}$.
+Suppose the solution is $y(t) = Ce^{2x}$ with $C \in \mathbb{R}$.
 
-Allora
+Then
 
 $y'(x) = 2Ce^{2x}$
 
-Sostituendo
+Substituting
 
 $
 2Ce^{2x} = 2Ce^{2x}
 $
 
-L'equazione è verificata quindi $y(x) = Ce^{2x}$ è una soluzione.
+The equation is verified, so $y(x) = Ce^{2x}$ is a solution.
 :::
 
-::: tip Esempio
-Consideriamo l'equazione differenziale:
+::: tip Example
+Consider the differential equation:
 
 $$ 
 y'(x) = 0
 $$
 
-dove
+where
 
 - $a(x) = 0$
 - $b(x) = 0$
 
-Supponiamo che la soluzione sia $y(x) = 2$.
+Suppose the solution is $y(x) = 2$.
 
-Allora
+Then
 
 $y'(x) = 0$
 
-Sostituendo
+Substituting
 
 $
 0 = 0
 $
 
-L'equazione è verificata quindi $y(x) = 2$ è una soluzione.
+The equation is verified, so $y(x) = 2$ is a solution.
 :::
 
-Dagli esempi precedenti emerge che le soluzioni proposte in realtà non sono unichè, bensì infinite.
+From the previous examples, it emerges that the proposed solutions are not unique but infinite.
 
-Per selezionarne una occorre imporre delle condizioni ulteriori, come mostra il prossimo teorema.
+To select one, additional conditions must be imposed, as shown in the next theorem.
 
-## Problema di Cauchy
+## Cauchy Problem
 
-Dati $x_0 \in I$ e $y_0 \in \mathbb{R}$, una soluzione $y$ che verifica $y(x_0) = y_0$ si dice **soluzione del problema di Cauchy**:
+Given $x_0 \in I$ and $y_0 \in \mathbb{R}$, a solution $y$ that satisfies $y(x_0) = y_0$ is called a **solution to the Cauchy problem**:
 
 $$
 \begin{cases}
@@ -92,43 +92,41 @@ y(x_0) = y_0
 \end{cases}
 $$
 
-::: tip Equazione Omogenea Associata
-Sappiamo che l'equazione è **omogenea** se $b(x) = 0 \quad \forall x \in I$ e **non omogenea** altrimenti.
+::: tip Associated Homogeneous Equation
+We know that the equation is **homogeneous** if $b(x) = 0 \quad \forall x \in I$ and **non-homogeneous** otherwise.
 
-Quindi
+Thus,
 
 $$
 y' = ay \text{ in } I
 $$
 
-
-si dice **equazione omogenea associata** di $y' = ay + b \text{ in } I$.
+is called the **associated homogeneous equation** of $y' = ay + b \text{ in } I$.
 :::
 
-## Soluzione Generale
+## General Solution
 
-> oppure **Integrale Generale**
+> or **General Integral**
 
-Siano 
+Let 
 
-- $I \subset \mathbb{R}$ un intervallo.
+- $I \subset \mathbb{R}$ be an interval.
 - $a(x) \in C(I)$.
-- $A(x)$ una primitiva di $a(x)$ in $I$.
+- $A(x)$ be a primitive of $a(x)$ in $I$.
 
-Tutte le soluzioni di $y'(x) = a(x)y(x)$ in $I$ sono 
+All solutions of $y'(x) = a(x)y(x)$ in $I$ are 
 
 $$
-y(x) = Ce^{A(x)} \text{ con } C \in \mathbb{R}
+y(x) = Ce^{A(x)} \text{ with } C \in \mathbb{R}
 $$ 
 
-
-Se sono noti anche $x_0 \in I$ e $y_0 \in \mathbb{R}$, la funzione
+If $x_0 \in I$ and $y_0 \in \mathbb{R}$ are also known, the function
 
 $$
 y(x) = y_0e^{A(x) - A(x_0)}
 $$
 
-è l'unica soluzione del problema di Cauchy 
+is the unique solution to the Cauchy problem 
 
 $$
 \begin{cases}
@@ -137,26 +135,25 @@ y(x_0) = y_0
 \end{cases}
 $$
 
-Quindi 
+Thus,
 
 $$
-Ce^{A(x)} \text{ con } C \in \mathbb{R}
+Ce^{A(x)} \text{ with } C \in \mathbb{R}
 $$ 
 
-si dice **soluzione generale** o l'**integrale generale** di $y'(x) = a(x)y(x)$
+is called the **general solution** or the **general integral** of $y'(x) = a(x)y(x)$
 
-::: tip Studio dell'omogenea associata
-Studiamo l'equazione omogenea associata, supponendo che $y$ sia soluzione di $y'=ay$ in $I$ e che $y(x) \neq 0 \quad \forall x \in I$ 
-.
+::: tip Study of the Associated Homogeneous Equation
+Let's study the associated homogeneous equation, assuming that $y$ is a solution of $y'=ay$ in $I$ and that $y(x) \neq 0 \quad \forall x \in I$.
 
-Allora
+Then
 
 $$
 \frac{y'(x)}{y(x)} = a(x)
 $$
 
 $
-\int \frac{y'(x)}{y(x)} dx = \int a(x) dx + C_0 \text{ con } C_0 \in \mathbb{R}
+\int \frac{y'(x)}{y(x)} dx = \int a(x) dx + C_0 \text{ with } C_0 \in \mathbb{R}
 $
 
 $
@@ -171,196 +168,196 @@ $
 y(x) = \pm e^{C_0}e^{\int a(x)dx}
 $
 
-Ponendo $C = \pm e^{C_0}$ 
-si ottiene
+Setting $C = \pm e^{C_0}$ 
+we get
 
 $$
 y(x) = Ce^{\int a(x)dx}
 $$
 
-Quindi 
+Thus,
 
 $$
-y(x) = Ce^{A(x)} \text{ è soluzione } \forall C \in \mathbb{R}
+y(x) = Ce^{A(x)} \text{ is a solution } \forall C \in \mathbb{R}
 $$
 :::
 
-## Soluzione Particolare
+## Particular Solution
 
-Siano 
+Let 
 
-- $I \subset \mathbb{R}$ un intervallo.
-- $a$ e $b$ $\in C(I)$.
-- $A(x)$ una primitiva di $a$ in $I$.
+- $I \subset \mathbb{R}$ be an interval.
+- $a$ and $b$ $\in C(I)$.
+- $A(x)$ be a primitive of $a$ in $I$.
 
-Se $\tilde{y}(x)$ è una soluzione di
+If $\tilde{y}(x)$ is a solution of
 
 $$
 y'(x) = a(x)y(x) + b(x)
 $$
 
-allora tutte le soluzioni sono
+then all solutions are
 
 $$
-y(x) = \tilde{y}(x) + Ce^{A(x)} \text{ con } C \in \mathbb{R}
+y(x) = \tilde{y}(x) + Ce^{A(x)} \text{ with } C \in \mathbb{R}
 $$
 
-::: tip Studo della non omogenea
+::: tip Study of the Non-Homogeneous Equation
 
 $$
 y'(x) = a(x)y(x) + b(x) \text{ in } I
 $$
 
-Siano $y(x)$ e $\tilde{y}(x)$ due soluzioni.
+Let $y(x)$ and $\tilde{y}(x)$ be two solutions.
 
-Posto $z(x) := y(x) - \tilde{y}(x)$ si ha
+Setting $z(x) := y(x) - \tilde{y}(x)$ we have
 
 $$
 z'(x) = y'(x) - \tilde{y}'(x) = a(x)y(x) + b(x) - a(x)\tilde{y}(x) - b(x) = a(y(x) - \tilde{y}(x)) = az(x)
 $$
 
-Ma l'equazione differenziale $z'(x) = az(x)$ sappiamo che ha come soluzione
+But the differential equation $z'(x) = az(x)$ is known to have the solution
 
 $$
 z(x) = Ce^{A(x)}
 $$
 
-Quindi
+Thus,
 
 $$
 y(x) = z(x) + \tilde{y}(x) = \tilde{y}(x) + Ce^{A(x)}
 $$
 :::
 
-Rimane il problema di determinare una soluzione $\tilde{y}(x)$ detta **soluzione particolare** dell'**equazione non omogenea**.
+The problem remains to determine a solution $\tilde{y}(x)$ called the **particular solution** of the **non-homogeneous equation**.
 
-> Esistono 2 possibili metodi: Variazione della costante, ad intuito.
+> There are 2 possible methods: Variation of the constant, by intuition.
 
-### Variazione della costante
+### Variation of the Constant
 
-Si cerca una soluzione nella forma $K(x)e^{A(x)}$.
+We seek a solution in the form $K(x)e^{A(x)}$.
 
-Sostituendo nell'equazione $y'(x) = a(x)y(x) + b(x)$ si ha
+Substituting into the equation $y'(x) = a(x)y(x) + b(x)$ we get
 
 $$
 K'(x)e^{A(x)} + a(x)K(x)e^{A(x)} = a(x)K(x)e^{A(x)} + b(x)
 $$
 
-Quindi
+Thus,
 
 $$
 K'(x) = b(x)e^{-A(x)}
 $$
 
-Allora se $K(x)$ è una primitiva di $b(x)e^{-A(x)}$ in $I$, la funzione
+Then if $K(x)$ is a primitive of $b(x)e^{-A(x)}$ in $I$, the function
 
 $$
 \tilde{y}(x) = K(x)e^{A(x)}
 $$
 
-è la soluzione cercata.
+is the sought solution.
 
-::: tip Teorema
-Siano $I \subset \mathbb{R}$ un intervallo, $a, b \in C(I)$ e $A(x)$ una primitiva di $a$ in $I$.
+::: tip Theorem
+Let $I \subset \mathbb{R}$ be an interval, $a, b \in C(I)$, and $A(x)$ be a primitive of $a$ in $I$.
 
-- Tutte le **soluzioni dell'equazione non omogenea** $y'(x) = a(x)y(x) + b(x)$ sono
+- All **solutions of the non-homogeneous equation** $y'(x) = a(x)y(x) + b(x)$ are
 
 $$
-y(x) = (C + K(x))e^{A(x)} \text{ con } C \in \mathbb{R}
+y(x) = (C + K(x))e^{A(x)} \text{ with } C \in \mathbb{R}
 $$
 
-dove $K(x)$ è una primitiva di $b(x)e^{-A(x)}$ in $I$.
+where $K(x)$ is a primitive of $b(x)e^{-A(x)}$ in $I$.
 
-- Dati $x_0 \in I$ e $y_0 \in \mathbb{R}$, la funzione
+- Given $x_0 \in I$ and $y_0 \in \mathbb{R}$, the function
 
 $$
 y(x) = (y_0 + K(x) - K(x_0))e^{A(x) - A(x_0)}
 $$
 
-è l'unica **soluzione del problema di cauchy**.
+is the unique **solution to the Cauchy problem**.
 :::
 
-::: tip Esempio
-Determinare le soluzioni dell'equazione
+::: tip Example
+Determine the solutions of the equation
 
 $$
 y'(x) = -2y(x) + 3 \text{ in } \mathbb{R}
 $$
 
-Studiamo prima l'equazione omogenea associata
+First, let's study the associated homogeneous equation
 
 $$
 y'(x) = -2y(x)
 $$
 
-che ha come **soluzione generale** $y(x) = Ce^{\int a(x)dx}$ con $a(x) = -2$
+which has the **general solution** $y(x) = Ce^{\int a(x)dx}$ with $a(x) = -2$
 
 $$
-Ce^{-2x} \text{ con } C \in \mathbb{R}
+Ce^{-2x} \text{ with } C \in \mathbb{R}
 $$
 
-Seguendo il metodo della variazione della costante si pone 
+Following the method of variation of the constant, we set 
 
 $$
 \tilde{y}(x) = K(x)e^{-2x}
 $$
 
-Sostituendo $\tilde{y}(x)$ nell'equazione non omogenea, otteniamo $K'(x)e^{-2x} = 3$, ovvero
+Substituting $\tilde{y}(x)$ into the non-homogeneous equation, we get $K'(x)e^{-2x} = 3$, that is
 
 $$
 K'(x) = 3e^{2x}
 $$
 
-Integrando si ottiene
+Integrating, we get
 
 $$
 K(x) = \frac{3}{2}e^{2x} + C
 $$
 
-Scegliendo quindi $K(x) = \frac{3}{2}e^{2x}$ si ottiene la soluzione dell'equazione non omogenea
+Thus, choosing $K(x) = \frac{3}{2}e^{2x}$, we get the solution of the non-homogeneous equation
 
 $$
 \tilde{y}(x) = \frac{3}{2}e^{2x}e^{-2x} = \frac{3}{2} 
 $$
 
-Tutte le soluzioni sono
+All solutions are
 
 $$
-y(x) = \frac{3}{2} +Ce^{-2x} \text{, con } C \in \mathbb{R}
+y(x) = \frac{3}{2} +Ce^{-2x} \text{, with } C \in \mathbb{R}
 $$
 :::
 
-### Metodo intuitivo
+### Intuitive Method
 
-E' possibile ricavare una **soluzione particolare** $\tilde{y}(x)$ di $y' = ay + b$ ad intuito.
+It is possible to derive a **particular solution** $\tilde{y}(x)$ of $y' = ay + b$ by intuition.
 
-::: tip Esempio
+::: tip Example
 
-Si consideri l'equazione
+Consider the equation
 
 $$
 y' = 3y + 4x^3 + 2x^2 -x +1 \text{ in } \mathbb{R}
 $$
 
-Supponiamo che la soluzione sia della forma
+Suppose the solution is of the form
 
 $$
 \tilde{y}(x) = ax^3 + bx^2 + cx + d
 $$
 
-Sostituendo nell'equazione risulta
+Substituting into the equation, we get
 
 $$
 3a^2 + 2bx + c = 3ax^3 + 3bx^2 + 3cx + 3d + 4x^3 + 2x^2 -x +1
 $$
 
-Raccogliendo
+Collecting terms,
 
 $$
 (3a + 4)x^3 + (-3a + 3b + 2)x^2 (-2b +3c -1)x + (-c +3d +1) = 0
 $$
 
-L'equazione è verificata se
+The equation is satisfied if
 
 $$
 \begin{cases}
@@ -371,25 +368,25 @@ $$
 \end{cases}
 $$
 
-Ovvero se e solo se
+That is, if and only if
 
 - $a = - \frac{4}{3}$
 - $b = -2$
 - $c = -1$
 - $a = - \frac{2}{3}$
 
-Allora
+Then
 
 $$
 \tilde{y}(x) = \frac{4}{3}x^3 - 2x^2 - x - \frac{2}{3}
 $$
 
-E tutte le soluzioni sono 
+And all solutions are 
 
 $$
-\tilde{y}(x) = Ce^{3x} - \frac{4}{3}x^3 - 2x^2 -x - \frac{2}{3} \text{ con } C \in \mathbb{R}
+\tilde{y}(x) = Ce^{3x} - \frac{4}{3}x^3 - 2x^2 -x - \frac{2}{3} \text{ with } C \in \mathbb{R}
 $$
 
-> Risolvere questa equazione con il **Metodo della Costante** avrebbe portato a calcoli laboriosi.
+> Solving this equation with the **Constant Method** would have led to laborious calculations.
 
 :::
