@@ -25,31 +25,34 @@ export const itConfig = {
       { text: 'Home', link: '/it/' },
     ],
     sidebar: {
-      '/learn/engineering/mathematics/': [
+      '/it/learn/engineering/mathematics/': [
         {
           text: 'Mathematics',
-          link: '/learn/engineering/mathematics/',
+          link: '/it/learn/engineering/mathematics/',
           items: [
             {
               text: 'Calcolo Differenziale',
+              collapsed: true,
               items: [
-                { text: 'Polinomio di Taylor', link: '/learn/engineering/mathematics/calcolo_differenziale/' },
-                { text: 'Tabella Sviluppi', link: '/learn/engineering/mathematics/calcolo_differenziale//taylor_tabella' },
+                { text: 'Polinomio di Taylor', link: '/it/learn/engineering/mathematics/calcolo_differenziale/' },
+                { text: 'Tabella Sviluppi', link: '/it/learn/engineering/mathematics/calcolo_differenziale//taylor_tabella' },
               ]
             },
             {
               text: 'Equazioni Differenziali',
+              collapsed: true,
               items: [
-                { text: 'Equazioni Differenziali Ordinarie', link: '/learn/engineering/mathematics/equazioni_differenziali/eq_diff_ordinarie' },
-                { text: 'Equazioni Differenziali Lineari Primo Ordine', link: '/learn/engineering/mathematics/equazioni_differenziali/eq_lineari_primo_ordine' },
-                { text: 'Equazioni del Primo Ordine a variabili separabili', link: '/learn/engineering/mathematics/equazioni_differenziali/eq_primo_ordine_variabili_separabili' },
-                { text: 'Equazioni del Secondo Ordine', link: '/learn/engineering/mathematics/equazioni_differenziali/eq_lineari_secondo_ordine' },
+                { text: 'Equazioni Differenziali Ordinarie', link: '/it/learn/engineering/mathematics/equazioni_differenziali/eq_diff_ordinarie' },
+                { text: 'Equazioni Differenziali Lineari Primo Ordine', link: '/it/learn/engineering/mathematics/equazioni_differenziali/eq_lineari_primo_ordine' },
+                { text: 'Equazioni del Primo Ordine a variabili separabili', link: '/it/learn/engineering/mathematics/equazioni_differenziali/eq_primo_ordine_variabili_separabili' },
+                { text: 'Equazioni del Secondo Ordine', link: '/it/learn/engineering/mathematics/equazioni_differenziali/eq_lineari_secondo_ordine' },
               ]
             },
             {
               text: 'Integrali Impropri',
+              collapsed: true,
               items: [
-                { text: 'Integrabilità in senso Improprio', link: '/learn/engineering/mathematics/integrali_impropri/' },
+                { text: 'Integrabilità in senso Improprio', link: '/it/learn/engineering/mathematics/integrali_impropri/' },
               ]
             }
           ]
@@ -59,30 +62,31 @@ export const itConfig = {
         {
           text: 'Python',
           items: [
-            { text: 'Home', link: '/learn/programming_languages/python/' },
+            { text: 'Home', link: '/it/learn/programming_languages/python/' },
             { 
               text: 'Moduli', 
-              link: '/learn/programming_languages/python/modules/',
+              link: '/it/learn/programming_languages/python/modules/',
               items: [
-                { text: 'Introduzione', link: '/learn/programming_languages/python/modules/' },
-                { text: 'Namespace', link: '/learn/programming_languages/python/modules/namespace' },
+                { text: 'Introduzione', link: '/it/learn/programming_languages/python/modules/' },
+                { text: 'Namespace', link: '/it/learn/programming_languages/python/modules/namespace' },
                 { 
                   text: 'Standard Modules', 
                   collapsed: true,
-                  link: '/learn/programming_languages/python/modules/standard_modules/',
+                  link: '/it/learn/programming_languages/python/modules/standard_modules/',
                   items: [
-                    { text: 'Random', link: '/learn/programming_languages/python/modules/standard_modules/random' },
-                    { text: 'Platform', link: '/learn/programming_languages/python/modules/standard_modules/platform' },
+                    { text: 'Random', link: '/it/learn/programming_languages/python/modules/standard_modules/random' },
+                    { text: 'Platform', link: '/it/learn/programming_languages/python/modules/standard_modules/platform' },
                   ]
                 },
-                { text: 'Package', link: '/learn/programming_languages/python/modules/package' },
+                { text: 'Package', link: '/it/learn/programming_languages/python/modules/package' },
+                { text: 'PIP', link: '/it/learn/programming_languages/python/modules/pip' },
               ]
             },
-            { text: 'Errori ed Eccezioni', link: '/learn/programming_languages/python/errors_and_exceptions' },
+            { text: 'Errori ed Eccezioni', link: '/it/learn/programming_languages/python/errors_and_exceptions' },
           ]
         }
       ],
-      '/learn/tools/github/': [
+      '/it/learn/tools/github/': [
         {
           text: 'GitHub',
           items: [
@@ -92,7 +96,7 @@ export const itConfig = {
           ]
         }
       ],
-      'learn/tools/vscode/': [
+      'it/learn/tools/vscode/': [
         {
           text: 'Visual Studio Code',
           items: [

@@ -1,155 +1,150 @@
-# Integrabilità in senso Improprio
+# Improper Integrals
 
-Fin ora abbiamo sempre definito il concetto di **integrale** sotto le condizioni che $f$ fosse una funzione limitata e che $I$ fosse un intervallo limitato.
+So far, we have always defined the concept of **integral** under the conditions that $f$ was a bounded function and that $I$ was a bounded interval.
 
-Ora vediamo come si può estendere queste ipotesti ai casi in cui $f$ e/o $I$ non sono limitati.
+Now let's see how these hypotheses can be extended to cases where $f$ and/or $I$ are not bounded.
 
-::: tip Teorema
+::: tip Theorem
 
-Sia $f: (a, b] \to \mathbb{R}, \ a \in \mathbb{R} \cup \{-\infty\}, \text{ tale che } f \text{ sia integrabile in } [\omega, b] \ \forall \omega \in (a, b]$.
+Let $f: (a, b] \to \mathbb{R}, \ a \in \mathbb{R} \cup \{-\infty\}, \text{ such that } f \text{ is integrable in } [\omega, b] \ \forall \omega \in (a, b]$.
 
-Se esiste in $\mathbb{R}^*$ il limite
+If the limit exists in $\mathbb{R}^*$
 
 $$
 \lim_{\omega \to a^+} \int_{\omega}^{b} f(x) \, dx
 $$
 
-tale limite è detto **integrale improprio** o **generalizzato** di $f$ in $(a, b]$.
+this limit is called the **improper** or **generalized** integral of $f$ in $(a, b]$.
 
-Ora, se il limite esiste finito:
-- $f$ è **integrabile in senso improprio** in $(a, b]$ e l'integrale improprio di $f$ è **convergente**.
+Now, if the limit exists and is finite:
+- $f$ is **improperly integrable** in $(a, b]$ and the improper integral of $f$ is **convergent**.
 
-Al contrario, se esiste non finito:
+On the other hand, if it exists but is not finite:
 
-- l'integrale improprio di $f$ è detto **divergente** in $(a, b]$.
+- the improper integral of $f$ is said to be **divergent** in $(a, b]$.
 :::
 
-::: tip Teorema
+::: tip Theorem
 
-Sia $f: [a, b) \to \mathbb{R}, \ b \in \mathbb{R} \cup \{\infty\}, \text{ tale che } f \text{ sia integrabile in } [a, \lambda] \ \forall \lambda \in [a, b)$.
+Let $f: [a, b) \to \mathbb{R}, \ b \in \mathbb{R} \cup \{\infty\}, \text{ such that } f \text{ is integrable in } [a, \lambda] \ \forall \lambda \in [a, b)$.
 
-Se esiste in $\mathbb{R}^*$ il limite
+If the limit exists in $\mathbb{R}^*$
 
 $$
 \lim_{\lambda \to b^-} \int_{a}^{\lambda} f(x) \, dx
 $$
 
-tale limite è detto **integrale improprio** o **generalizzato** di $f$ in $[a, b)$.
+this limit is called the **improper** or **generalized** integral of $f$ in $[a, b)$.
 
-Ora, se il limite esiste finito:
-- $f$ è **integrabile in senso improprio** in $[a, b)$ e l'integrale improprio di $f$ è **convergente**.
+Now, if the limit exists and is finite:
+- $f$ is **improperly integrable** in $[a, b)$ and the improper integral of $f$ is **convergent**.
 
-Al contrario, se esiste non finito:
+On the other hand, if it exists but is not finite:
 
-- l'integrale improprio di $f$ è detto **divergente** in $[a, b)$.
+- the improper integral of $f$ is said to be **divergent** in $[a, b)$.
 :::
 
-Dimostriamo il teorema con un esempio...
+Let's prove the theorem with an example...
 
 $$
 \int_{a}^{b} x^{-k}dx
 $$
 
-Con $x \in \mathbb{R^+}$, $k \in \mathbb{R}$ e $0 < a < b$.
+With $x \in \mathbb{R^+}$, $k \in \mathbb{R}$ and $0 < a < b$.
 
-Dobbiamo distinguere due casi in base al valore assunto da $k$, infatti
+We need to distinguish two cases based on the value of $k$, indeed
 
-- se $k = 1$
+- if $k = 1$
 
 $$
 \int_{a}^{b} x^{-k}dx = \int_{a}^{b} \frac{1}{x} = \ln |x| \bigg\rvert_{a}^{b}
 $$
 
-- se $k \neq 1$
+- if $k \neq 1$
 
 $$
 \int_{a}^{b} x^{-k}dx = \int_{a}^{b} \frac{1}{x^k}dx = \frac{x^{1 - k}}{1 - k} \bigg\rvert_{a}^{b}
 $$
 
-Ora procediamo fissando, per esempio, $b = 1$
+Now let's proceed by fixing, for example, $b = 1$
 
-- se $k = 1$
+- if $k = 1$
 
 $$
 \int_{a}^{1} x^{-k}dx = - \ln (a)
 $$
 
-- se $k \neq 1$
+- if $k \neq 1$
 
 $$
 \int_{a}^{1} x^{-k}dx = \frac{1}{1 - k} - \frac{a^{1-k}}{1 - k}
 $$
 
-Ora dobbiamo calcolare il limite
+Now we need to calculate the limit
 
 $$
 \lim_{a \to 0^+} \int_{a}^{1} x^{-k}dx
 $$
 
-- se $k = 1$
+- if $k = 1$
 
 $$
 \lim_{a \to 0^+} - \ln (a) = \infty
 $$
 
-Questo limite **non è convergente**.
+This limit **is not convergent**.
 
-- se $k \neq 1$
+- if $k \neq 1$
 
 $$
 \lim_{a \to 0^+} \frac{1}{1 - k} - \frac{a^{1-k}}{1 - k}
 $$
 
-Questo limite **è convergente se e solo se** $1 - k > 0$ ovvero $k < 1$.
+This limit **is convergent if and only if** $1 - k > 0$ that is $k < 1$.
 
-Sotto tale ipotesi il limite vale
+Under this hypothesis, the limit is
 
 $$
 - \frac{1}{1 - k}
 $$
 
-Abbiamo quindi dimostrato che
+We have thus demonstrated that
 
 $$
-f(x) = \frac{1}{x^k} \text{ è integrabile in senso improprio in } (0, 1] \text{ se } k < 1
+f(x) = \frac{1}{x^k} \text{ is improperly integrable in } (0, 1] \text{ if } k < 1
 $$
 
 ----
 
-Vale un discorso analogo se si pone $a = 1$ e si manda $b$ a infinito.
+A similar argument holds if we set $a = 1$ and let $b$ go to infinity.
 
-In tal caso si ottiene
-
-$$
-f(x) = \frac{1}{x^k} \text{ è integrabile in senso improprio in } [1, \infty) \text{ se } k > 1
-$$
-
-::: tip Grafico di $f(x) = \frac{1}{\sqrt{x}}$
-
-Questo esempio contiene un risultato sorprendente!
-
-E' possibile che l'area di una funzione illimitata in un intervallo assuma un valore finito, infatti
+In this case, we obtain
 
 $$
-f(x) = \frac{1}{\sqrt{x}} \text{ è integrabile in senso improprio in } (0, 1] \text{ poichè } k = \frac{1}{2} < 1
+f(x) = \frac{1}{x^k} \text{ is improperly integrable in } [1, \infty) \text{ if } k > 1
 $$
 
-Svolgendo i calcoli si ottiene
+::: tip Graph of $f(x) = \frac{1}{\sqrt{x}}$
+
+This example contains a surprising result!
+
+It is possible for the area under an unbounded function over an interval to have a finite value, indeed
+
+$$
+f(x) = \frac{1}{\sqrt{x}} \text{ is improperly integrable in } (0, 1] \text{ because } k = \frac{1}{2} < 1
+$$
+
+Performing the calculations, we get
 
 $$
 \lim_{a \to 0^+} \int_{a}^{1} \frac{1}{x^{\frac{1}{2}}}dx = \lim_{a \to 0^+} 2 x^{\frac{1}{2}} \bigg\rvert_{a}^{1} = \lim_{a \to 0^+} 2( 1 - a^{\frac{1}{2}} ) = 2
 $$
 
-come mostrato nel teorema precedente.
+as shown in the previous theorem.
 
-> In questo caso la funzione è **illimitata** per $x \to 0$.
+> In this case, the function is **unbounded** as $x \to 0$.
 
 ![plot](./plot_1.png)
 
 :::
-
-
-
-
-
 

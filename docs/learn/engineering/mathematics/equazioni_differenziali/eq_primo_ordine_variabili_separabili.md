@@ -1,21 +1,21 @@
-# Equazioni del primo ordine a variabili separabili
+# First order differential equations with separable variables
 
-Si tratta di una equazione nella forma
+This is an equation in the form
 
 $$
 y'(x) = g(x)h(y(x))
 $$
 
-Dove
+Where
 
 - $g : I \to \mathbb{R}$.
 - $h : J \to \mathbb{R}$.
 
-Procederemo come nel caso di **euazioni lineari omogenee**, osservando che se $y_0$ è uno zero di $h$ allora $f(x) = y_0$ è una soluzione.
+We will proceed as in the case of **homogeneous linear equations**, noting that if $y_0$ is a zero of $h$ then $f(x) = y_0$ is a solution.
 
-::: tip Esempio
+::: tip Example
 
-Consideriamo il problema di Cauchy
+Consider the Cauchy problem
 
 $$
 \begin{cases}
@@ -28,16 +28,16 @@ $$
 \int y^{\frac{1}{3}} dy = \int dx
 $$
 
-Quindi
+Therefore
 
 $$
 \frac{3}{2} y^{\frac{2}{3}} = x + C
 $$
 
-Poichè $y(0) = 0$ si ottiene $C = 0$, sostituendo
+Since $y(0) = 0$ we get $C = 0$, substituting
 
 $$
 y(x) = \sqrt{(\frac{2}{3}x)^3} = \frac{2}{3} \sqrt{\frac{2}{3}x^3}
 $$
 
-Si noti che $y(x)$ è definita solo per valori non negativi di x e che è soluzione del problema di Cauchy in $[0, \infty)$.
+Note that $y(x)$ is defined only for non-negative values of x and that it is a solution of the Cauchy problem in $[0, \infty)$.

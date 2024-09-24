@@ -27,28 +27,30 @@ export const enConfig = {
       '/learn/engineering/mathematics/': [
         {
           text: 'Mathematics',
-          link: '/learn/engineering/mathematics/',
           items: [
             {
               text: 'Differential Calculus',
+              collapsed: true,
               items: [
-                { text: 'Taylor Polynomial', link: '/learn/engineering/mathematics/differential_calculus/' },
-                { text: 'Development Table', link: '/learn/engineering/mathematics/differential_calculus/taylor_table' },
+                { text: 'Taylor Polynomial', link: '/learn/engineering/mathematics/calcolo_differenziale/' },
+                { text: 'Taylor Table', link: '/learn/engineering/mathematics/calcolo_differenziale/taylor_tabella' },
               ]
             },
             {
               text: 'Differential Equations',
+              collapsed: true,
               items: [
-                { text: 'Ordinary Differential Equations', link: '/learn/engineering/mathematics/differential_equations/ordinary_diff_eq' },
-                { text: 'First Order Linear Differential Equations', link: '/learn/engineering/mathematics/differential_equations/first_order_linear_diff_eq' },
-                { text: 'First Order Separable Differential Equations', link: '/learn/engineering/mathematics/differential_equations/first_order_separable_diff_eq' },
-                { text: 'Second Order Differential Equations', link: '/learn/engineering/mathematics/differential_equations/second_order_diff_eq' },
+                { text: 'Ordinary Differential Equations', link: '/learn/engineering/mathematics/equazioni_differenziali/eq_diff_ordinarie' },
+                { text: 'First Order Linear Differential Equations', link: '/learn/engineering/mathematics/equazioni_differenziali/eq_lineari_primo_ordine' },
+                { text: 'First Order Separable Differential Equations', link: '/learn/engineering/mathematics/equazioni_differenziali/eq_primo_ordine_variabili_separabili' },
+                { text: 'Second Order Differential Equations', link: '/learn/engineering/mathematics/equazioni_differenziali/eq_lineari_secondo_ordine' },
               ]
             },
             {
               text: 'Improper Integrals',
+              collapsed: true,
               items: [
-                { text: 'Improper Integrability', link: '/learn/engineering/mathematics/improper_integrals/' },
+                { text: 'Improper Integrability', link: '/learn/engineering/mathematics/integrali_impropri/' },
               ]
             }
           ]
@@ -91,12 +93,21 @@ export const enConfig = {
           ]
         }
       ],
-      'learn/tools/vscode/': [
+      '/learn/tools/vscode/': [
         {
           text: 'Visual Studio Code',
           items: [
             { text: 'Home', link: './' },
             { text: 'Task', link: './task' },
+          ]
+        }
+      ],
+      '/learn/frameworks/GraphQL/': [
+        {
+          text: 'GraphQL',
+          items: [
+            { text: 'Home', link: '/learn/frameworks/GraphQL/' },
+            { text: 'Introduction', link: '/learn/frameworks/GraphQL/introduction' },
           ]
         }
       ]

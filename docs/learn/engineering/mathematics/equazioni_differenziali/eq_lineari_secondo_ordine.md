@@ -1,20 +1,20 @@
-# Equazioni Lineari del Secondo Ordine
+# Second-Order Linear Differential Equations
 
-## Definizione
+## Definition
 
-Dati un intervallo $I \subseteq \mathbb{R}$ e tre funzioni $b, c, g \in C(I)$ e l'**equazione differenziale lineare del secondo ordine** data da:
+Given an interval $I \subseteq \mathbb{R}$ and three functions $b, c, g \in C(I)$, the **second-order linear differential equation** is given by:
 
 $$
 y'' + by' + cy = g \text{ in } I
 $$
 
-Allora una funzione $y \in C^2(I)$ si dice **soluzione** se
+Then a function $y \in C^2(I)$ is called a **solution** if
 
 $$
-y''(x) + b(x)y'(x) + c(x)y(x) = g(x) \text{ per } x \in I
+y''(x) + b(x)y'(x) + c(x)y(x) = g(x) \text{ for } x \in I
 $$
 
-Dati in oltre $x_0 \in I$ e $y_0, v_0 \in \mathbb{R}$, una soluzione $y$ che verifica $y(x_0) = y_0$ e $y'(x_0) = v_0$ si dice **soluzione del problema di Cauchy**:
+Given $x_0 \in I$ and $y_0, v_0 \in \mathbb{R}$, a solution $y$ that satisfies $y(x_0) = y_0$ and $y'(x_0) = v_0$ is called a **solution of the Cauchy problem**:
 
 $$
 \begin{cases}
@@ -24,119 +24,119 @@ y'(x_0) = v_0
 \end{cases}
 $$
 
-## Equazioni omogenee a coefficienti costanti
+## Homogeneous Equations with Constant Coefficients
 
-Consideriamo l'equazione **lineare a coefficienti costanti**
+Consider the **linear equation with constant coefficients**
 
 $$
-ay'' + by' + cy = 0 \text{ con } a \neq 0
+ay'' + by' + cy = 0 \text{ with } a \neq 0
 $$
 
-Per trovare la **soluzione generale** è sufficiente trovare **due soluzioni linearmente indipendenti**.
+To find the **general solution**, it is sufficient to find **two linearly independent solutions**.
 
-L'idea generale è quella di cercare soluzioni del tipo $y(x) = e^{\lambda x}$ 
+The general idea is to look for solutions of the form $y(x) = e^{\lambda x}$.
 
-Sostituendo si ottiene l'**equazione caratteristica associata**
+Substituting, we obtain the **associated characteristic equation**
 
 $$
 e^{\lambda x}(a\lambda^2 + b\lambda + c) = 0
 $$
 
-con $e^{\lambda x} \neq 0$
+with $e^{\lambda x} \neq 0$
 
 $$
 a\lambda^2 + b\lambda + c = 0
 $$
 
-Si distunguono tre casi come mostra seguente il teorema.
+There are three cases as shown by the following theorem.
 
-### Teorema
+### Theorem
 
-Siano $a, b, c \in \mathbb{R}$ e $a \neq 0$.
+Let $a, b, c \in \mathbb{R}$ and $a \neq 0$.
 
-::: tip Se $b^2 - 4ac > 0$
+::: tip If $b^2 - 4ac > 0$
 
-Dette $\lambda_1, \lambda_2 \in \mathbb{R}$ le due soluzioni reali dell'**equazione caratteristica**, la soluzione generale dell'**equazione omogenea** è
+Let $\lambda_1, \lambda_2 \in \mathbb{R}$ be the two real solutions of the **characteristic equation**, the general solution of the **homogeneous equation** is
 
 $$
 y(x) = \alpha e^{\lambda_1 x} + \beta e^{\lambda_2 x}
 $$
 
-> Si ha infatti:
+> Indeed:
 > - $y_1(x) = e^{\lambda_1 x}$
 > - $y_2(x) = e^{\lambda_2 x}$
 :::
 
-::: tip Se $b^2 - 4ac = 0$
+::: tip If $b^2 - 4ac = 0$
 
-Detta $\lambda \in \mathbb{R}$ la soluzione reale dell'**equazione caratteristica**, la soluzione generale dell'**equazione omogenea** è
+Let $\lambda \in \mathbb{R}$ be the real solution of the **characteristic equation**, the general solution of the **homogeneous equation** is
 
 $$
 y(x) = (\alpha + \beta) e^{\lambda x}
 $$
 
-> Si ha infatti una soluzione reale con molteplicità 2:
+> Indeed, there is a real solution with multiplicity 2:
 
-> $\lambda = -\frac{b}{2a} \in \mathbb{R}$, quindi
-> - $y_1(x) = e^{\lambda x}$ è una soluzione.
-> - Per individuare la seconda soluzione si usa il metodo di variazione delle costanti.
+> $\lambda = -\frac{b}{2a} \in \mathbb{R}$, so
+> - $y_1(x) = e^{\lambda x}$ is a solution.
+> - To find the second solution, the method of variation of constants is used.
 :::
 
-::: tip Se $b^2 - 4ac < 0$
+::: tip If $b^2 - 4ac < 0$
 
-Detta $\lambda_1, \lambda_2 \in \mathbb{C}$ le due soluzioni complesse dell'**equazione caratteristica**, la soluzione generale dell'**equazione omogenea** è
+Let $\lambda_1, \lambda_2 \in \mathbb{C}$ be the two complex solutions of the **characteristic equation**, the general solution of the **homogeneous equation** is
 
 $$
-y(x) = e^{\mu x}(\alpha cos(\omega x) + \beta sin(\omega x))
+y(x) = e^{\mu x}(\alpha \cos(\omega x) + \beta \sin(\omega x))
 $$
 
-> Si ha infatti due soluzioni complesse coniugate
+> Indeed, there are two complex conjugate solutions
 
 > - $\lambda_1 = \mu + i\omega$ 
 > - $\lambda_2 = \mu - i\omega$ 
 :::
 
-## Esempi
+## Examples
 
-Si consideri l'equazione differenziale
+Consider the differential equation
 
 $$
 y'' + 4y = 0
 $$
 
-Cerchiamo una soluzione del tipo $y(x) = e^{\lambda x}$ e sostuiamo
+We look for a solution of the form $y(x) = e^{\lambda x}$ and substitute
 
 $$
 \lambda^2 + 4 = 0
 $$
 
-Otteniamo $\lambda = \pm 2i$
+We obtain $\lambda = \pm 2i$
 
-> In questo caso $\mu = 0$ e $\omega = 2$
+> In this case $\mu = 0$ and $\omega = 2$
 
-Quindi la soluzione generale è
+So the general solution is
 
 $$
-y(x) = \alpha cos (2x) + \beta sin (2x)
+y(x) = \alpha \cos (2x) + \beta \sin (2x)
 $$
 
 ---
 
-Si consideri l'equazione differenziale
+Consider the differential equation
 
 $$
 y'' - 3y' + 2y = 0
 $$
 
-Cerchiamo una soluzione del tipo $y(x) = e^{\lambda x}$ e sostuiamo
+We look for a solution of the form $y(x) = e^{\lambda x}$ and substitute
 
 $$
 \lambda^2 + 3\lambda + 2 = 0
 $$
 
-Otteniamo $\lambda_1 = 1, \lambda_2 = 2$
+We obtain $\lambda_1 = 1, \lambda_2 = 2$
 
-Quindi la soluzione generale è
+So the general solution is
 
 $$
 y(x) = \alpha e^{x} + \beta e^{2x}
@@ -144,81 +144,81 @@ $$
 
 ---
 
-Si consideri l'equazione differenziale
+Consider the differential equation
 
 $$
 y'' - 2y' + 5y = 0
 $$
 
-Cerchiamo una soluzione del tipo $y(x) = e^{\lambda x}$ e sostuiamo
+We look for a solution of the form $y(x) = e^{\lambda x}$ and substitute
 
 $$
 \lambda^2 + 2\lambda + 5 = 0
 $$
 
-Otteniamo $\lambda_1 = -1 + 2i, \lambda_2 = -1 - 2i$
+We obtain $\lambda_1 = -1 + 2i, \lambda_2 = -1 - 2i$
 
-> In questo caso $\mu = -1, \omega = 2$
+> In this case $\mu = -1, \omega = 2$
 
-Quindi la soluzione generale è
+So the general solution is
 
 $$
-y(x) = e^-{x}(\alpha cos(2x) + \beta sin(2x))
+y(x) = e^{-x}(\alpha \cos(2x) + \beta \sin(2x))
 $$
 
 ---
 
-Si consideri l'equazione differenziale
+Consider the differential equation
 
 $$
 y'' - 6y' + 9y = 0
 $$
 
-Cerchiamo una soluzione del tipo $y(x) = e^{\lambda x}$ e sostuiamo
+We look for a solution of the form $y(x) = e^{\lambda x}$ and substitute
 
 $$
 \lambda^2 + 6\lambda + 9 = 0
 $$
 
-Otteniamo $\lambda = -3$
+We obtain $\lambda = -3$
 
-Quindi la soluzione generale è
+So the general solution is
 
 $$
 y(x) = (\alpha + \beta x)e^{-3x}
 $$
 
-## Equazioni non omogenee a coefficienti costanti
+## Non-Homogeneous Equations with Constant Coefficients
 
-Consideriamo l'equazione
+Consider the equation
 
 $$
 ay'' + by' + cy = g(x) \in \mathbb{R}
 $$
 
-dove $a, b, c \in \mathbb{R}, a \neq 0, g \in C(\mathbb{R})$.
+where $a, b, c \in \mathbb{R}, a \neq 0, g \in C(\mathbb{R})$.
 
-Sappiamo che basta trovare una soluzione $\tilde{y}(x)$
+We know that it is enough to find a solution $\tilde{y}(x)$.
 
-Come per le **euqazioni del primo ordine**, abbiamo due metodi.
+As with **first-order equations**, we have two methods.
 
-### Variazione delle Costanti
+### Variation of Constants
 
-Sia
+Let
 
 $$
 \alpha y_1(x) + \beta y_2(x)
 $$
 
-la soluzione generale dell'equazione omogenea associata
+be the general solution of the associated homogeneous equation
 
 $$
-ay'' + by + cy = 0
+ay'' + by' + cy = 0
 $$
 
-Cerchiamo una soluzione della forma $y(x) = A(x)y_1(x) + B(x)y_2(x)$
+We look for a solution of the form $y(x) = A(x)y_1(x) + B(x)y_2(x)$.
 
-Dopo ulteriori calcoli che qui non mostreremo, si arriva a
+After further calculations, which we will not show here, we arrive at
 
 $$
 \begin{cases}
@@ -227,37 +227,37 @@ A'y_1' + B'y_2' = \frac{g(x)}{a} \\
 \end{cases}
 $$
 
-Integrando si ottengono quindi $A(x), B(x)$
+Integrating, we obtain $A(x), B(x)$.
 
-::: tip Esempio
+::: tip Example
 
-Consideriamo l'euqazione
+Consider the equation
 
 $$
-y'' + 6y' + 9y = e^{-3x} \log(1+x^2) \text{ per } x \in \mathbb{R}
+y'' + 6y' + 9y = e^{-3x} \log(1+x^2) \text{ for } x \in \mathbb{R}
 $$
 
-L'**equazione caratteristica** dell'equazione omogenea associata è
+The **characteristic equation** of the associated homogeneous equation is
 
 $$
 \lambda^2 + 6\lambda + 9 = 0
 $$
 
-Ossia $\lambda = -3$
+That is, $\lambda = -3$
 
-Quindi la soluzione generale è
+So the general solution is
 
 $$
 y(x) = (A + B x)e^{-3x}
 $$
 
-Ora sicerca una soluzione del tipo
+Now we look for a solution of the form
 
 $$
 A(x)e^{-3x} + B(x)xe^{-3x}
 $$
 
-Si risolve quindi il sistema
+We then solve the system
 
 $$
 \begin{cases}
@@ -266,7 +266,7 @@ A'e^{-3x} + B'xe^{-3x} = 0 \\
 \end{cases}
 $$
 
-Quindi
+So
 
 $$
 \begin{cases}
@@ -275,7 +275,7 @@ B' = \log(1+x^2) \\
 \end{cases}
 $$
 
-Integrando si ottiene
+Integrating, we obtain
 
 $$
 \begin{cases}
@@ -284,7 +284,7 @@ B(x) = x\log(1+x^2) -2x +2 \arctan{x} \\
 \end{cases}
 $$
 
-Dunque la soluzione generale è
+Thus, the general solution is
 
 $$
 y(x) = \alpha e^{-3x} + \beta xe^{-3x} + \frac{1}{2}((x^2-1)\log(1+x^2) -3x^2 + 4x\arctan{x})e^{-3x}

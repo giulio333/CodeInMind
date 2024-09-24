@@ -1,53 +1,53 @@
-# Polinomio di Taylor
+# Taylor's Theorem
 
-Si tratta di uno strumento molto potente per risolvere un problema ricorrente dell'analisi matematica.
+It is a very powerful tool for solving a recurring problem in mathematical analysis.
 
-Come possiamo approssimare una funzione in termini di funzioni più semplici, come polinomi, pur mantenendo alcune delle sue proprietà originali?
+How can we approximate a function in terms of simpler functions, such as polynomials, while maintaining some of its original properties?
 
-Il polinomio di Taylor serve proprio a questo, almeno in un intorno di un punto interni al dominio.
+The Taylor polynomial serves precisely this purpose, at least in a neighborhood of a point within the domain.
 
-Siano 
+Let
 
-- $f: (a, b) \to \mathbb{R}$ continua in $x_0$
+- $f: (a, b) \to \mathbb{R}$ be continuous at $x_0$
 
 - $x_0 \in (a, b)$
 
-allora
+then
 
 $$
-f(x) = f(x_0) + o(1) \text{ per } x \to x_0
+f(x) = f(x_0) + o(1) \text{ as } x \to x_0
 $$
 
-mentre se $f$ è derivabile in $x_0$, allora
+whereas if $f$ is differentiable at $x_0$, then
 
 $$
-f(x) = f(x_0) + f'(x - x_0) + o(x - x_0) \text{ per } x \to x_0
+f(x) = f(x_0) + f'(x - x_0) + o(x - x_0) \text{ as } x \to x_0
 $$
 
-La prima approssimazione si indica come $T_0(x)$ mentre la seconda $T_1(x)$. 
+The first approximation is denoted as $T_0(x)$ while the second as $T_1(x)$.
 
-Queste rappresentano rispettivamente le migliori approssimazioni **costante** e **lineare** di $f(x)$ per $x \to x_0$.
+These represent respectively the best **constant** and **linear** approximations of $f(x)$ as $x \to x_0$.
 
 ::: tip
-L'approssimazione $T_1(x)$ ha grado $\leq 1$, infatti
+The approximation $T_1(x)$ has degree $\leq 1$, in fact
 
-- $T_0(x)$ ha grado $1$ se $f'(x_0) \neq 0$
-- $T_1(x)$ ha grado $1$ se $f'(x_0) = 0$
+- $T_0(x)$ has degree $1$ if $f'(x_0) \neq 0$
+- $T_1(x)$ has degree $1$ if $f'(x_0) = 0$
 :::
 
-Si noti che 
+Note that
 
 $$
 T_0(x_0) = T_1(x_0) = f(x_0)
 $$
 
-e
+and
 
 $$
 T'_1(x_0) = f'(x_0)
 $$
 
-e in generale, se $f$ è derivabile $n$ volte
+and in general, if $f$ is differentiable $n$ times
 
 $$
 T^{(n)}_n(x_0) = f^{(n)}(x_0) \quad \forall n \in \mathbb{N}

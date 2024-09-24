@@ -1,150 +1,147 @@
-# Equazioni Differenziali Ordinarie
+# Ordinary Differential Equations
 
-## Definizione
+## Definition
 
-Si tratta di **equazioni** la cui **icognita** è una **funzione** e in cui compaiono le **derivate** della funzione incognita.
+These are **equations** whose **unknown** is a **function** and in which the **derivatives** of the unknown function appear.
 
-Se l'incognita è una funzione di una sola variabile indipendente, si parla di **equazioni differenziali ordinarie (EDO)**.
+If the unknown is a function of a single independent variable, we speak of **ordinary differential equations (ODEs)**.
 
-::: info Notazione
-Indicheremo con 
-- $y$ la **variabile dipendente** (o funzione ingognita).
-- con $x$ la **variabile indipendente**.
+::: info Notation
+We will denote
+- $y$ as the **dependent variable** (or unknown function).
+- $x$ as the **independent variable**.
 :::
 
-La **forma generale** di un'equazione differenziale è del tipo
+The **general form** of a differential equation is of the type
 
 $$
 f(x, y, y', ... , y^{(n)}) = 0
 $$
 
-dove $f$ è una funzione definita in un sottoinsieme di $\mathbb{R}^{n+2}$, a valori in $\mathbb{R}$.
+where $f$ is a function defined in a subset of $\mathbb{R}^{n+2}$, with values in $\mathbb{R}$.
 
-::: tip Perchè $\mathbb{R}^{n+2}$ ?
-Basta contare gli elementi della funzione $f$:
+::: tip Why $\mathbb{R}^{n+2}$?
+Just count the elements of the function $f$:
 
-- $t$ e $y$ sono 2 elementi.
-- $y', ... , y^{(n)}$ sono n elementi.
+- $t$ and $y$ are 2 elements.
+- $y', ... , y^{(n)}$ are n elements.
 
-Quindi $n+2$ elementi.
+So $n+2$ elements.
 :::
 
-## Classificazione delle EDO
+## Classification of ODEs
 
-### Ordine di una EDO
+### Order of an ODE
 
-L'ordine di una funzine differenziale è l'ordine massimo delle derivate della funzione incognita che compaiono nell'equazione.
+The order of a differential equation is the highest order of the derivatives of the unknown function that appear in the equation.
 
-### EDO Lineari
+### Linear ODEs
 
-Un'equazione differenziale si dice **lineare** se $f$ è lineare rispetto a $y, ... , y^n$.
+A differential equation is called **linear** if $f$ is linear with respect to $y, ... , y^n$.
 
-Detto in modo più semplice, è sufficiente che $y$ e le sue derivate abbiano esponente 1.
+In simpler terms, it is sufficient that $y$ and its derivatives have exponent 1.
 
-### EDO Omogenee
+### Homogeneous ODEs
 
-Un'equazione differenziale si dice **omogenea** se esiste $k \in \mathbb{R}$ tale che
+A differential equation is called **homogeneous** if there exists $k \in \mathbb{R}$ such that
 
 $$
 f(x, \lambda y, ..., \lambda y^{(n)}) = \lambda^k f(x, y, ... , y^{(n)}) \quad \forall \lambda > 0
 $$
 
-In parole più semplici, per essere omogenea tutti i termini che compaiono nell'equazione dipendono dalla funzione incognita $y$ o dalle sue derivate.
+In simpler terms, to be homogeneous, all the terms that appear in the equation depend on the unknown function $y$ or its derivatives.
 
-Al contrario, una equazione del tipo
+Conversely, an equation of the type
 
 $$
-f(x, y, y', ..., y^{(n)}) = g(x) \quad \text{con } g(x) \neq 0
+f(x, y, y', ..., y^{(n)}) = g(x) \quad \text{with } g(x) \neq 0
 $$
 
-si dirà **non omogenea**.
+is called **non-homogeneous**.
 
+### Autonomous ODE
 
-### EDO Autonoma
+A differential equation is called **autonomous** if $f$ does not depend on $t$.
 
-Un'equazione differenziale si dice **autonoma** se $f$ non dipende da $t$
+### Normal Form of an ODE
 
-### Forma Normale di una EDO
-
-Un'equazione differenziale si dice in **forma normale** se la derivata di ordine massimo è determinata epslicitamente in funzione delle altre, ovvero
+A differential equation is said to be in **normal form** if the highest order derivative is explicitly determined as a function of the others, that is
 
 $$
 y^{(n)}(x) = f(x,y(x),y(x)',...,y^{(n-1)}(x))
 $$
 
-Questa volta la funzione è definita in $f: A \subseteq \mathbb{R}^{n+1} \to \mathbb{R}$ 
+This time the function is defined as $f: A \subseteq \mathbb{R}^{n+1} \to \mathbb{R}$.
 
-::: tip Esempio Legge di Newton
+::: tip Example Newton's Law
 
-Un classico esempio di equazione differenziale ordinaria è la **Legge di Newton**
+A classic example of an ordinary differential equation is **Newton's Law**
 
 $$
 my''(t) = F(t, y(t), y'(t))
 $$
 
-che, nel caso più generale,descrive il moto di un punto matieriale di massa $m$ lungo una guida verticale, dove:
+which, in the most general case, describes the motion of a material point of mass $m$ along a vertical guide, where:
 
-- $y(t)$ indica la posizione del punto in funzione del tempo $t$
-- $y'(t)$ indica la velocità del punto in funzione del tempo $t$
-- $y''(t)$ indica l'acceleration del punto in funzione del tempo $t$
+- $y(t)$ indicates the position of the point as a function of time $t$
+- $y'(t)$ indicates the velocity of the point as a function of time $t$
+- $y''(t)$ indicates the acceleration of the point as a function of time $t$
 
 $$
 my''(t) = -mg
 $$
 
-Integrando ambo i membri si ottengono le già note equazioni
+By integrating both sides, the well-known equations are obtained
 
 $y'(t) = -gt + A$
 
 $y(t) = -\frac{1}{2}gt^2 + At + B$
 
-dove $A$ e $B$ sono costanti.
+where $A$ and $B$ are constants.
 
-- Qui $f$ è data da
+- Here $f$ is given by
 
 $$
 f(t, y, y', y'') = my'' - F(t, y, y', y') 
 $$
 
-- E' una equazione differenziale del **Secondo Ordine** in quanto il grado massimo è 2.
-- E' **Lineare**.
-- Non è **omogenea** in quanto $f(y, y', y'') \not = 0$.
+- It is a **Second Order** differential equation since the highest degree is 2.
+- It is **Linear**.
+- It is not **homogeneous** since $f(y, y', y'') \not = 0$.
 :::
 
-## Esempi
+## Examples
 
-::: tip Studiare $y^{(3)} + x^2y' + y = 0$
-L'equazione differenziale:
+::: tip Study $y^{(3)} + x^2y' + y = 0$
+The differential equation:
 
-- E' lineare poichè le sue derivate hanno tutte esponente uno.
-- Il suo ordine è 3, infatti il massimo ordine di derivazione è 3 $y^{(3)}$.
-- E' omogenea poichè $g(x) = 0$.
+- It is linear because its derivatives all have exponent one.
+- Its order is 3, as the highest order of derivation is 3 $y^{(3)}$.
+- It is homogeneous because $g(x) = 0$.
 
-Si tratta quindi di un'equazione differenziale lineare, del terzo ordine, omogenea, non a coefficienti costanti.
+It is therefore a linear, third-order, homogeneous differential equation, not with constant coefficients.
 :::
 
-::: tip Studiare $y'' + y^2 - x^3 -1 = 0$
-L'equazione differenziale:
+::: tip Study $y'' + y^2 - x^3 -1 = 0$
+The differential equation:
 
-- Non è lineare poichè $y$ ha esponente $> 1$.
-- Il suo ordine è 2, infatti il massimo ordine di derivazione è 2 ($y''$).
-- Non è omogenea poichè $g(x) \neq 0$.
+- It is not linear because $y$ has an exponent $> 1$.
+- Its order is 2, as the highest order of derivation is 2 ($y''$).
+- It is not homogeneous because $g(x) \neq 0$.
 
-Si tratta quindi di un'equazione differenziale non lineare, del secondo ordine, non omogenea e a coefficienti costanti.
+It is therefore a non-linear, second-order, non-homogeneous differential equation with constant coefficients.
 
-::: warning "Omogenea?"
-Non lasciatevi ingannare dal fatto che a destra dell'uguale c'è $0$.
+::: warning "Homogeneous?"
+Do not be fooled by the fact that on the right side of the equal sign there is $0$.
 
-In questo caso infatti, l'equazione va riscritta come
+In this case, the equation should be rewritten as
 
 $f(x, y, y', y'') = g(x)$
 
-Che nel nostro caso corrisponde a
+Which in our case corresponds to
 
 $y'' + y^2 = x^3 + 1$
 
-Quindi $g(x) = x^3 + 1$
+So $g(x) = x^3 + 1$
 :::
-
-
 

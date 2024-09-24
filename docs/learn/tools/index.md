@@ -23,4 +23,9 @@ features:
       dark: /github_d.png
     title: GitHub
     link: ./github/
+  - icon: 
+      light: /learn/tools/Poetry/Poetry.png
+      dark: /learn/tools/Poetry/Poetry.png
+    title: Poetry
+    link: ./Poetry/
 ---
