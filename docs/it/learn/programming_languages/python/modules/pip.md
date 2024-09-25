@@ -54,9 +54,15 @@ Ad esempio, se hai installato sia Python 2.x che Python 3.x, potresti avere:
 
 In generale, se esegui il comando pip senza specificare una versione, pip installerà i pacchetti per la versione di Python predefinita nel tuo sistema. Tuttavia, potresti voler utilizzare pip3 se desideri installare pacchetti specificamente per Python 3.
 
-Come gestire le versioni multiple di pip
+## Gestire versioni multiple di pip
 
-Se vuoi essere sicuro di usare il pip giusto per una specifica versione di Python, puoi eseguire pip direttamente usando il comando associato alla versione Python. Ad esempio:
+Se vuoi essere sicuro di usare il **pip** giusto per una specifica versione di **Python**, puoi eseguire pip direttamente usando il comando associato alla versione Python, ad esempio
+
+```bash
+python3 -m pip install nome_pacchetto
+```
+
+Questo comando esegue il **pip** associato alla versione di Python 3.
 
 ## Comandi Utili
 
@@ -64,36 +70,217 @@ Ecco alcuni comandi utili per iniziare a lavorare con PIP
 
 ### Verifica la Versione di PIP
 
-```bash
+Per verificare la versione di **PIP** installata, esegui il comando:
+
+::: code-group
+```bash [Comando]
 pip --version
 ```
 
+```text [Output]
+pip 21.1.3 from /usr/local/lib/python3.9/site-packages/pip (python 3.9)
+```
+:::
+
+### Help
+
+L'output di questo comando ti mostrerà tutti i comandi disponibili e le loro opzioni
+
+::: code-group
+
+```bash [Comando]
+pip --help
+```
+
+```text [Output]
+Usage:
+  pip3 <command> [options]
+
+Commands:
+  install                     Install packages.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  inspect                     Inspect the python environment.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  check                       Verify installed packages have compatible dependencies.
+  config                      Manage local and global configuration.
+  search                      Search PyPI for packages.
+  cache                       Inspect and manage pips wheel cache.
+  index                       Inspect information available from package indexes.
+  wheel                       Build wheels from your requirements.
+  hash                        Compute hashes of package archives.
+  completion                  A helper command used for command completion.
+  debug                       Show information useful for debugging.
+  help                        Show help for commands.
+```
+
+:::
+
+Se hai bisogno di aiuto su un comando specifico, puoi eseguire:
+
+::: code-group
+
+```bash [Comando]
+pip <comando> --help
+```
+
+```text [Output]
+Usage:
+  pip3 install [options] <requirement specifier> [package-index-options] ...
+  pip3 install [options] -r <requirements file> [package-index-options] ...
+  pip3 install [options] [-e] <vcs project url> ...
+  pip3 install [options] [-e] <local project path> ...
+  pip3 install [options] <archive url/path> ...
+
+Description:
+  Install packages from:
+
+  - PyPI (and other indexes) using requirement specifiers.
+  - VCS project urls.
+  - Local project directories.
+  - Local or remote source archives.
+
+  pip also supports installing from "requirements files", which provide
+  an easy way to specify a whole environment to be installed.
+```
+:::
+
+
 ### Installa un Pacchetto
 
-```bash
+Per installare un pacchetto, esegui il comando:
+
+::: code-group
+
+```bash [Comando]
 pip install nome_pacchetto
 ```
 
-### Installa una Versione Specifica di un Pacchetto
+```text [Output]
+Collecting nome_pacchetto
+  Downloading nome_pacchetto-1.0.0.tar.gz (1.0 kB)
+  ...
+```
+:::
 
-```bash
+Se vuoi installare una versione specifica di un pacchetto, puoi farlo specificando la versione:
+
+::: code-group
+
+```bash [Comando]
 pip install nome_pacchetto==versione
 ```
 
-### Disinstalla un Pacchetto
+```text [Output]
+Collecting nome_pacchetto==versione
+  Downloading nome_pacchetto-1.0.0.tar.gz (1.0 kB)
+  ...
+```
+:::
+
+::: tip
+Se non specifichi alcun altro parametro Python installerà il pacchetto per tutti gli utenti del sistema. Se vuoi installare il pacchetto solo per l'utente corrente, aggiungi il parametro `--user`.
 
 ```bash
+pip install --user nome_pacchetto 
+```
+:::
+
+### Disinstalla un Pacchetto
+
+Per disinstallare un pacchetto, esegui il comando:
+
+::: code-group
+
+```bash [Comando]
 pip uninstall nome_pacchetto
 ```
 
+```text [Output]
+Found existing installation: nome_pacchetto 1.0.0
+Uninstalling nome_pacchetto-1.0.0:
+  Would remove:
+    ...
+Proceed (y/n)?
+```
+:::
+
 ### Mostra i Pacchetti Installati
 
-```bash
+Per visualizzare tutti i pacchetti installati, esegui il comando:
+
+::: code-group
+
+```bash [Comando]
 pip list
 ```
 
+```text [Output]
+Package            Version
+------------------ -------
+certifi            2021.5.30
+chardet            4.0.0
+...
+```
+:::
+
+### Mostra Informazioni su un Pacchetto
+
+Per visualizzare informazioni su un pacchetto specifico, esegui il comando:
+
+::: code-group
+
+```bash [Comando]
+pip show nome_pacchetto
+```
+
+```text [Output]
+Name: nome_pacchetto
+Version: 1.0.0
+Summary: A short description of the package
+Home-page:
+Author:
+Author-email:
+License:
+Location: /usr/local/lib/python3.9/site-packages
+Requires:
+Required-by:
+```
+:::
+
 ### Aggiorna un Pacchetto
 
-```bash
+Per aggiornare un pacchetto, esegui il comando:
+
+::: code-group
+
+```bash [Comando]
 pip install --upgrade nome_pacchetto
 ```
+
+```text [Output]
+Collecting nome_pacchetto
+  Downloading nome_pacchetto-1.0.1.tar.gz (1.0 kB)
+  ...
+```
+:::
+
+### Cerca un Pacchetto
+
+Per cercare un pacchetto su PyPI, esegui il comando:
+
+::: code-group
+
+```bash [Comando]
+pip search nome_pacchetto
+```
+
+```text [Output]
+nome_pacchetto (1.0.0)  - A short description of the package
+```
+:::
+
+::: tip
+Puoi sempre cercare un pacchetto da [PyPI](https://pypi.org/search) direttamente dal tuo browser.

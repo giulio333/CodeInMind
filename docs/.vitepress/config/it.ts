@@ -69,6 +69,7 @@ export const itConfig = {
               items: [
                 { text: 'Introduzione', link: '/it/learn/programming_languages/python/modules/' },
                 { text: 'Namespace', link: '/it/learn/programming_languages/python/modules/namespace' },
+                { text: 'Import', link: '/it/learn/programming_languages/python/modules/import' },
                 { 
                   text: 'Standard Modules', 
                   collapsed: true,
@@ -80,6 +81,15 @@ export const itConfig = {
                 },
                 { text: 'Package', link: '/it/learn/programming_languages/python/modules/package' },
                 { text: 'PIP', link: '/it/learn/programming_languages/python/modules/pip' },
+              ]
+            },
+            {
+              text: 'Stringhe',
+              link: '/it/learn/programming_languages/python/strings/strings/',
+              items: [
+                { text: 'Introduzione', link: '/it/learn/programming_languages/python/strings/' },
+                { text: 'ASCII', link: '/it/learn/programming_languages/python/strings/ASCII' },
+                { text: 'Unicode', link: '/it/learn/programming_languages/python/strings/unicode' },
               ]
             },
             { text: 'Errori ed Eccezioni', link: '/it/learn/programming_languages/python/errors_and_exceptions' },

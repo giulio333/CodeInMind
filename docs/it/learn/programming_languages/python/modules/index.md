@@ -2,7 +2,9 @@
 
 Il codice tende a crescere, e con esso aumentano anche le difficoltà nella sua manutenzione. Un codice grande è più complesso da gestire e debugare, e per progetti di grandi dimensioni è indispensabile suddividere il lavoro tra più sviluppatori.
 
-Per farlo, è necessario dividere il codice in parti più piccole e indipendenti che possano collaborare tra loro. In Python, questa suddivisione si realizza tramite i **moduli**.
+Per farlo, è necessario dividere il codice in parti più piccole e indipendenti che possano collaborare tra loro. 
+
+In Python, questa suddivisione si realizza tramite i **moduli**.
 
 ## Perché usare i Moduli?
 
@@ -21,17 +23,19 @@ Un grande progetto, come un'applicazione con interfaccia grafica, potrebbe esser
 
 Ciascuna di queste parti può essere ulteriormente suddivisa in moduli più piccoli.
 
-<NoteComponent title="Decomposizione" text="La decomposizione in informatica, nota anche come factoring, consiste nel suddividere un problema o un sistema complesso in parti più semplici." />
+::: tip Decomposizione
+La **decomposizione** in informatica, nota anche come **factoring**, consiste nel suddividere un problema o un sistema complesso in parti più semplici.
+:::
 
 ## Come utilizzare un modulo?
 
-Cos'è un modulo? Il tutorial di Python lo definisce come un file contenente definizioni e istruzioni Python, che può essere successivamente importato e utilizzato quando necessario.
+Possiamo pensare ad un modulo come un file contenente definizioni e istruzioni Python, che può essere successivamente importato e utilizzato quando necessario.
 
 La gestione dei moduli consiste in due situazioni distinte:
 
-- **Utente del modulo**: La prima (probabilmente la più comune) si verifica quando vuoi usare un modulo già esistente, scritto da qualcun altro o creato da te stesso durante il lavoro su un progetto complesso. In questo caso sei l'utente del modulo.
+- **Utente del modulo**: La prima (probabilmente la più comune) si verifica quando vuoi usare un modulo già esistente, scritto da qualcun altro o creato da te stesso durante il lavoro su un progetto complesso. In questo caso sei l'**utente** del modulo.
   
-- **Fornitore del modulo**: La seconda situazione si verifica quando vuoi creare un modulo completamente nuovo, sia per il tuo uso personale, sia per rendere più facile la vita di altri programmatori. In questo caso, sei il fornitore del modulo.
+- **Fornitore del modulo**: La seconda situazione si verifica quando vuoi creare un modulo completamente nuovo, sia per il tuo uso personale, sia per rendere più facile la vita di altri programmatori. In questo caso, sei il **fornitore** del modulo.
 
 ## Identificazione di un modulo
 
@@ -39,98 +43,24 @@ Un modulo è identificato dal suo nome.
 
 Python fornisce un certo numero di moduli quando viene installato.
 
-Tutti questi moduli, insieme alle **built-in functions**, formano la **Python Standard Library** - una sorta di biblioteca speciale. 
+Tutti questi moduli, insieme alle **built-in functions**, formano la **Python Standard Library**, una sorta di biblioteca speciale. 
 
 ::: tip Python Standard Library
-Dagli un'occhiata: [Python Standard Library](https://docs.python.org/3/library/index.html)
+Dagli un'occhiata [qui](https://docs.python.org/3/library/index.html)
 :::
+
+## Entità
 
 Ogni modulo è composto da **entità** (come un libro è composto da capitoli). Queste entità possono essere **funzioni**, **variabili**, **costanti**, **classi** e **oggetti**. 
 
 Se sai come accedere a un determinato modulo, puoi utilizzare tutte le **entità** che contiene.
 
-## Importare un Modulo
-
-Prima di usare un modulo devi importarlo tramite la **keyword** `import`.
-
-Ad esempio per importare il modulo `math`
+Per mostrare tutte le **entità** di un modulo, puoi utilizzare la funzione `dir()`.
 
 ``` python
 import math
-```
 
-L'istruzione `import` può trovarsi ovunque nel tuo codice, a patto che sia prima dell'utilizzo delle **entità** del modulo.
-
-E' possibile anche importare più di un modulo alla volta
-
-``` python
-import math, random
-```
-
-::: tip
-Per maggiori informazioni su come importare un modulo visitare la sezione [Namespace e Importazione](namespace.md#importazione-di-un-modulo)
-:::
-
-### sys.path
-
-Di default, Python cerca nella **directory corrente** e in altre **directory predefinite**. E' possibile però aggiungere nuove directory in cui cercare i moduli.
-
-Qui entra in gioco la lista `sys.path`, che specifica le directory in cui Python deve cercare i moduli.
-
-Se Python non trova il modulo della directory corrente, cerca nelle directory elencate in `sys.path`.
-
-Puoi visualizzare la lista dei percorsi eseguendo questo codice
-
-``` python
-import sys
-
-for p in sys.path:
-    print(p)
-```
-
-L'output sarà una lista di directory in cui Python cerca i moduli
-
-``` text
-C:\Users\user
-C:\Users\user\AppData\Local\Programs\Python\Python36-32\python36.zip
-C:\Users\user\AppData\Local\Programs\Python\Python36-32\DLLs
-C:\Users\user\AppData\Local\Programs\Python\Python36-32\lib
-C:\Users\user\AppData\Local\Programs\Python\Python36-32
-C:\Users\user\AppData\Local\Programs\Python\Python36-32\lib\site-packages
-```
-
-::: tip
-Python cerca i moduli in tutti i percorsi specificati nel `sys.path` **in ordine**!. 
-:::
-
-Per aggiungere un percorso alla lista `sys.path` puoi utilizzare due metodi:
-
-#### sys.path.insert()
-
-Per dare priorità al nuovo percorso, puoi aggiungerlo all'inizio della lista `sys.path`:
-
-``` python
-from sys import path
-
-# Inserisci il nuovo percorso all'inizio della lista
-sys.path.insert(0, '/path/to/module')
-
-# Ora puoi importare il modulo
-import module
-```
-
-#### sys.path.append()
-
-Per aggiungere il nuovo percorso alla fine della lista `sys.path`:
-
-```python
-from sys import path
-
-# Aggiungi il nuovo percorso alla fine della lista
-sys.path.append('/path/to/module')
-
-# Ora puoi importare il modulo
-import module
+print(dir(math))
 ```
 
 ## Linea Shebang
@@ -162,7 +92,8 @@ E' possibile anche definire variabili private, cioè accessibili solo all'intern
 
 """ module.py - commento """
 
-__my_var = 10
+__my_var = 10 # Variabile privata
+my_var = 20 # Variabile globale
 ```
 
 ::: tip
@@ -246,7 +177,7 @@ print("I'm a submodule")
 ```
 :::
 
-In questo caso stiamo importando `submodule` due volte: una volta da `module` e una volta direttamente. 
+Stiamo importando `submodule` due volte? No!
 
 Fortunatamente, Python è intelligente e non esegue due volte lo stesso modulo.
 
@@ -272,3 +203,5 @@ def somma(a, b):
 if __name__ == "__main__":
     assert somma(3, 4) == 7
 ```
+
+In questo caso il test viene eseguito solo quando il modulo viene eseguito direttamente e non quando viene importato.
