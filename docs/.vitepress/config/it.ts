@@ -85,11 +85,12 @@ export const itConfig = {
             },
             {
               text: 'Stringhe',
-              link: '/it/learn/programming_languages/python/strings/strings/',
+              link: '/it/learn/programming_languages/python/strings/',
               items: [
                 { text: 'Introduzione', link: '/it/learn/programming_languages/python/strings/' },
                 { text: 'ASCII', link: '/it/learn/programming_languages/python/strings/ASCII' },
                 { text: 'Unicode', link: '/it/learn/programming_languages/python/strings/unicode' },
+                { text: 'Stringhe Python', link: '/it/learn/programming_languages/python/strings/python_strings' },
               ]
             },
             { text: 'Errori ed Eccezioni', link: '/it/learn/programming_languages/python/errors_and_exceptions' },
