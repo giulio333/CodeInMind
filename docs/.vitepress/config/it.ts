@@ -64,6 +64,14 @@ export const itConfig = {
           items: [
             { text: 'Home', link: '/it/learn/programming_languages/python/' },
             { 
+              text: 'Strutture Dati', 
+              link: '/it/learn/programming_languages/python/strutture_dati/',
+              items: [
+                { text: 'Introduzione', link: '/it/learn/programming_languages/python/strutture_dati/' },
+                { text: 'Sequenze', link: '/it/learn/programming_languages/python/strutture_dati/sequence' },
+              ]
+            },
+            { 
               text: 'Moduli', 
               link: '/it/learn/programming_languages/python/modules/',
               items: [

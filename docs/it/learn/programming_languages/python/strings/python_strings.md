@@ -204,3 +204,31 @@ Il metodo `count()` restituisce il numero di occorrenze di un valore specifico a
 stringa = 'Hello, world!'
 print(stringa.count('l')) # Output: 3
 ```
+
+## Slicing
+
+La notazione slice può essere utilizzata per estrarre una sottostringa da una stringa.
+
+```python
+stringa = 'Hello, world!'
+print(stringa[7:12]) # Output: world
+```
+
+In generale, la notazione slice ha la seguente forma:
+
+```python
+stringa[inizio:fine:passo]
+```
+
+Dove:
+
+- `inizio` è l'indice di partenza della sottostringa (incluso).
+- `fine` è l'indice di fine della sottostringa (escluso).
+- `passo` è il passo di incremento dell'indice.
+
+Ad esempio, per estrarre una sottostringa con i caratteri nelle posizioni pari:
+
+```python
+stringa = 'Hello, world!'
+print(stringa[::2]) # Output: Hlo ol!
+```
