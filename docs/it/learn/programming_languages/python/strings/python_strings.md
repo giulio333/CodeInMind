@@ -46,6 +46,31 @@ stringa = stringa * 3
 print(stringa) # Output: Ciao,Ciao,Ciao,
 ```
 
+## Conversione
+
+Vale la pena notare che è sempre possibile convertire un numero in una stringa utilizzando la funzione `str()`.
+
+```python
+numero = 123
+stringa = str(numero)
+print(stringa) # Output: 123
+```
+
+Al contrario, la conversione inversa ha senso solo se la stringa rappresenta un numero valido.
+
+```python
+stringa = '123'
+numero = int(stringa)
+print(numero) # Output: 123
+```
+
+Se la stringa non rappresenta un numero valido, verrà generato un errore `ValueError`.
+
+```python
+stringa = 'abc'
+numero = int(stringa) # ValueError: invalid literal for int() with base 10: 'abc'
+```
+
 ## Indici delle stringhe
 
 Le stringhe in Python sono **sequenze** di caratteri, quindi è possibile accedere a ciascun carattere utilizzando un indice.
@@ -168,22 +193,6 @@ print(max(stringa)) # Output: w
 
 In questo caso, il carattere con il valore ASCII più alto è la `w`.
 
-## Index
-
-Il metodo `index()` cerca nella sequenza un valore specifico e restituisce la posizione della prima occorrenza di tale valore.
-
-```python
-stringa = 'Hello, world!'
-print(stringa.index('w')) # Output: 7
-```
-
-La sua assenza genererà un errore `ValueError`.
-
-```python
-stringa = 'Hello, world!'
-print(stringa.index('z')) # ValueError: substring not found
-```
-
 ## List
 
 Il metodo `list()` restituisce una lista di caratteri.
@@ -231,4 +240,75 @@ Ad esempio, per estrarre una sottostringa con i caratteri nelle posizioni pari:
 ```python
 stringa = 'Hello, world!'
 print(stringa[::2]) # Output: Hlo ol!
+```
+
+## String Comparison
+
+ Le stringhe possono essere confrontate utilizzando gli operatori di confronto:
+
+- `==` (uguale a)
+- `!=` (diverso da)
+- `>` (maggiore di)
+- `<` (minore di)
+- `>=` (maggiore o uguale a)
+- `<=` (minore o uguale a)
+
+Python non fa altro che confrontare i [code point](ASCII.md#code-points) dei caratteri.
+
+```python
+stringa1 = 'Hello'
+stringa2 = 'hello'
+
+print(stringa1 == stringa2) # Output: False
+print(stringa1 != stringa2) # Output: True
+print(stringa1 > stringa2) # Output: False
+print(stringa1 < stringa2) # Output: True
+print(stringa1 >= stringa2) # Output: False
+print(stringa1 <= stringa2) # Output: True
+```
+
+I primi due risultati sono `False` perché il confronto è case-sensitive.
+
+Il terzo risultato è `False` perché il codice ASCII di `H` è minore di quello di `h`, e così via.
+
+::: tip
+Anche se una stringa contiene solo cifre, sarà comunque considerata diversa da un numero intero.
+
+```python
+stringa = '123'
+numero = 123
+
+print(stringa == numero) # Output: False
+```
+
+Questo risultato è vero in generale.
+
+Attenzione a non utilizzare gli altri operatori di confronto con stringhe e numeri, poiché verrà generato un errore `TypeError`.
+:::
+
+## Ordinamento
+
+In generale, Python offre due modi per ordinare una stringa:
+
+### Sorted
+
+Il metodo `sorted()` prende come argomento una lista e restituisce una nuova lista contenente gli elementi ordinati.
+
+```python
+lista = ["b", "a", "d", "c"]
+lista_ordinata = sorted(lista)
+
+print(lista) # Output: ['b', 'a', 'd', 'c']
+print(lista_ordinata) # Output: ['a', 'b', 'c', 'd']
+```
+
+### Sort
+
+Il metodo `sort()` ordina la lista stessa.
+
+```python
+lista = ["b", "a", "d", "c"]
+lista.sort()
+
+print(lista) # Output: ['a', 'b', 'c', 'd']
 ```

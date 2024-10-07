@@ -4,6 +4,22 @@ Le stringhe in Python sono oggetti **immutabili**, il che significa che non poss
 
 Tuttavia, Python fornisce molti metodi per manipolare le stringhe. Questi metodi restituiscono una **nuova stringa** e non modificano la stringa originale.
 
+## Index
+
+Il metodo `index()` cerca nella sequenza un valore specifico e restituisce la posizione della prima occorrenza di tale valore.
+
+```python
+stringa = 'Hello, world!'
+print(stringa.index('w')) # Output: 7
+```
+
+La sua assenza genererà un errore `ValueError`.
+
+```python
+stringa = 'Hello, world!'
+print(stringa.index('z')) # ValueError: substring not found
+```
+
 ## capitalize()
 
 Il metodo `capitalize()` restituisce una nuova stringa con il primo carattere maiuscolo e tutti gli altri caratteri minuscoli.

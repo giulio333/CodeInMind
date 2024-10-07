@@ -1,13 +1,5 @@
-class MyClass:
-    def __init__(self, name):
-        self.name = name
+var = "ciao"
 
-    def greet(self):
-        print(f"Hello, my name is {self.name}!")
+new_var = sorted(var, reverse=False)
 
-class AnotherClass:
-    def __init__(self, value):
-        self.value = value
-
-    def display_value(self):
-        print(f"The value is {self.value}")
+print(new_var  )

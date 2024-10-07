@@ -31,6 +31,13 @@ export const itConfig = {
           link: '/it/learn/engineering/mathematics/',
           items: [
             {
+              text: 'Numeri Complessi',
+              collapsed: true,
+              items: [
+                { text: 'Introduzione', link: '/it/learn/engineering/mathematics/numeri_complessi/' },
+              ]
+            },
+            {
               text: 'Calcolo Differenziale',
               collapsed: true,
               items: [
@@ -64,7 +71,8 @@ export const itConfig = {
           items: [
             { text: 'Home', link: '/it/learn/programming_languages/python/' },
             { 
-              text: 'Strutture Dati', 
+              text: 'Strutture Dati',
+              collapsed: true,
               link: '/it/learn/programming_languages/python/strutture_dati/',
               items: [
                 { text: 'Introduzione', link: '/it/learn/programming_languages/python/strutture_dati/' },
@@ -74,6 +82,7 @@ export const itConfig = {
             { 
               text: 'Moduli', 
               link: '/it/learn/programming_languages/python/modules/',
+              collapsed: true,
               items: [
                 { text: 'Introduzione', link: '/it/learn/programming_languages/python/modules/' },
                 { text: 'Namespace', link: '/it/learn/programming_languages/python/modules/namespace' },
@@ -93,6 +102,7 @@ export const itConfig = {
             },
             {
               text: 'Stringhe',
+              collapsed: true,
               link: '/it/learn/programming_languages/python/strings/',
               items: [
                 { text: 'Introduzione', link: '/it/learn/programming_languages/python/strings/' },
@@ -102,7 +112,16 @@ export const itConfig = {
                 { text: 'Metodi Stringhe', link: '/it/learn/programming_languages/python/strings/strings_method' },
               ]
             },
-            { text: 'Errori ed Eccezioni', link: '/it/learn/programming_languages/python/errors_and_exceptions' },
+            {
+              text: 'Eccezioni',
+              collapsed: true,
+              link: '/it/learn/programming_languages/python/exceptions/',
+              items: [
+                { text: 'Introduzione', link: '/it/learn/programming_languages/python/exceptions/' },
+                { text: 'BaseException', link: '/it/learn/programming_languages/python/exceptions/BaseException' },
+             
+              ]
+            },
           ]
         }
       ],
