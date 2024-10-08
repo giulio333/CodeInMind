@@ -35,6 +35,7 @@ export const itConfig = {
               collapsed: true,
               items: [
                 { text: 'Introduzione', link: '/it/learn/engineering/mathematics/numeri_complessi/' },
+                { text: 'Radici Complesse', link: '/it/learn/engineering/mathematics/numeri_complessi/radici_complesse' },
               ]
             },
             {
