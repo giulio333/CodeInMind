@@ -31,6 +31,16 @@ export const itConfig = {
           link: '/it/learn/engineering/mathematics/',
           items: [
             {
+              text: 'Insiemi',
+              collapsed: true,
+              items: [
+                { text: 'Introduzione', link: '/it/learn/engineering/mathematics/1-insiemi/' },
+                { text: 'Insiemi Numerici', link: '/it/learn/engineering/mathematics/1-insiemi/insiemi-numerici' },
+                { text: 'Operazioni Tra Insiemi', link: '/it/learn/engineering/mathematics/1-insiemi/operazioni-insiemi' },
+                { text: 'Logica Predicativa', link: '/it/learn/engineering/mathematics/1-insiemi/logica' },
+              ]
+            },
+            {
               text: 'Numeri Complessi',
               collapsed: true,
               items: [
