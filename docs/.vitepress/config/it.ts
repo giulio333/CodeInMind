@@ -41,6 +41,23 @@ export const itConfig = {
               ]
             },
             {
+              text: 'Campi',
+              collapsed: true,
+              items: [
+                { text: 'Introduzione', link: '/it/learn/engineering/mathematics/campi/' },
+              ]
+            },
+            {
+              text: 'Numeri Reali',
+              collapsed: true,
+              items: [
+                { text: 'Assioma di Continuità', link: '/it/learn/engineering/mathematics/numeri_reali/' },
+                { text: 'Valore Assoluto', link: '/it/learn/engineering/mathematics/numeri_reali/valore_assoluto' },
+                { text: 'Disuguaglianza Triangolare', link: '/it/learn/engineering/mathematics/numeri_reali/disuguaglianza_triangolare' },
+                { text: 'Intervalli', link: '/it/learn/engineering/mathematics/numeri_reali/intervalli' },
+              ]
+            },
+            {
               text: 'Numeri Complessi',
               collapsed: true,
               items: [
@@ -130,6 +147,16 @@ export const itConfig = {
               items: [
                 { text: 'Introduzione', link: '/it/learn/programming_languages/python/exceptions/' },
                 { text: 'BaseException', link: '/it/learn/programming_languages/python/exceptions/BaseException' },
+             
+              ]
+            },
+            {
+              text: 'OOP',
+              collapsed: true,
+              link: '/it/learn/programming_languages/python/oop/',
+              items: [
+                { text: 'Introduzione', link: '/it/learn/programming_languages/python/oop/' },
+                { text: 'Esempi', link: '/it/learn/programming_languages/python/oop/esempi' },
              
               ]
             },
