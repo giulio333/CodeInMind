@@ -157,6 +157,10 @@ export const itConfig = {
               items: [
                 { text: 'Introduzione', link: '/it/learn/programming_languages/python/oop/' },
                 { text: 'Esempi', link: '/it/learn/programming_languages/python/oop/esempi' },
+                { text: 'Variabili di Istanza', link: '/it/learn/programming_languages/python/oop/variabili-di-istanza' },
+                { text: 'Variabili di Classe', link: '/it/learn/programming_languages/python/oop/variabili-di-classe' },
+                { text: 'hasattr', link: '/it/learn/programming_languages/python/oop/hasattr' },
+                { text: 'Metodi', link: '/it/learn/programming_languages/python/oop/metodi' },
              
               ]
             },
