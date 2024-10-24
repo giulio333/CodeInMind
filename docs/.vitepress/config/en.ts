@@ -56,58 +56,124 @@ export const enConfig = {
           ]
         }
       ],
-      '/learn/programming_languages/python/': [
+      '/learn/programming_languages/': [
         {
-          text: 'Python',
+          text: 'Programming Languages',
           items: [
-            { text: 'Home', link: '/learn/programming_languages/python/' },
-            { 
-              text: 'Modules', 
-              link: '/learn/programming_languages/python/modules/',
+            {
+              text: 'Python',
               items: [
-                { text: 'Introduction', link: '/learn/programming_languages/python/modules/' },
-                { text: 'Namespace', link: '/learn/programming_languages/python/modules/namespace' },
+                { text: 'Home', link: '/learn/programming_languages/python/' },
                 { 
-                  text: 'Standard Modules', 
+                  text: 'Data Structures',
                   collapsed: true,
-                  link: '/learn/programming_languages/python/modules/standard_modules/',
+                  link: '/learn/programming_languages/python/strutture_dati/',
                   items: [
-                    { text: 'Random', link: '/learn/programming_languages/python/modules/standard_modules/random' },
-                    { text: 'Platform', link: '/learn/programming_languages/python/modules/standard_modules/platform' },
+                    { text: 'Introduction', link: '/learn/programming_languages/python/strutture_dati/' },
+                    { text: 'Sequences', link: '/learn/programming_languages/python/strutture_dati/sequence' },
                   ]
                 },
-                { text: 'Package', link: '/learn/programming_languages/python/modules/package' },
+                { 
+                  text: 'Modules', 
+                  link: '/learn/programming_languages/python/modules/',
+                  collapsed: true,
+                  items: [
+                    { text: 'Introduction', link: '/learn/programming_languages/python/modules/' },
+                    { text: 'Namespace', link: '/learn/programming_languages/python/modules/namespace' },
+                    { text: 'Import', link: '/learn/programming_languages/python/modules/import' },
+                    { 
+                      text: 'Standard Modules', 
+                      collapsed: true,
+                      link: '/learn/programming_languages/python/modules/standard_modules/',
+                      items: [
+                        { text: 'Random', link: '/learn/programming_languages/python/modules/standard_modules/random' },
+                        { text: 'Platform', link: '/learn/programming_languages/python/modules/standard_modules/platform' },
+                      ]
+                    },
+                    { text: 'Package', link: '/learn/programming_languages/python/modules/package' },
+                    { text: 'PIP', link: '/learn/programming_languages/python/modules/pip' },
+                  ]
+                },
+                {
+                  text: 'Strings',
+                  collapsed: true,
+                  link: '/learn/programming_languages/python/strings/',
+                  items: [
+                    { text: 'Introduction', link: '/learn/programming_languages/python/strings/' },
+                    { text: 'ASCII', link: '/learn/programming_languages/python/strings/ASCII' },
+                    { text: 'Unicode', link: '/learn/programming_languages/python/strings/unicode' },
+                    { text: 'Python Strings', link: '/learn/programming_languages/python/strings/python_strings' },
+                    { text: 'String Methods', link: '/learn/programming_languages/python/strings/strings_method' },
+                  ]
+                },
+                {
+                  text: 'Exceptions',
+                  collapsed: true,
+                  link: '/learn/programming_languages/python/exceptions/',
+                  items: [
+                    { text: 'Introduction', link: '/learn/programming_languages/python/exceptions/' },
+                    { text: 'BaseException', link: '/learn/programming_languages/python/exceptions/BaseException' },
+                 
+                  ]
+                },
+                {
+                  text: 'OOP',
+                  collapsed: true,
+                  link: '/learn/programming_languages/python/oop/',
+                  items: [
+                    { text: 'Introduction', link: '/learn/programming_languages/python/oop/' },
+                    { text: 'Examples', link: '/learn/programming_languages/python/oop/esempi' },
+                    { text: 'Instance Variables', link: '/learn/programming_languages/python/oop/variabili-di-istanza' },
+                    { text: 'Class Variables', link: '/learn/programming_languages/python/oop/variabili-di-classe' },
+                    { text: 'hasattr', link: '/learn/programming_languages/python/oop/hasattr' },
+                    { text: 'Methods', link: '/learn/programming_languages/python/oop/metodi' },
+                 
+                  ]
+                },
+              ]
+            }
+          ]
+        }
+      ],
+      '/learn/tools/': [
+        {
+          text: 'Tools',
+          items: [
+            {
+              text: 'GitHub',
+              items: [
+                { text: 'Home', link: '/learn/tools/github/.' },
+                { text: 'Introduction', link: '/learn/tools/github/introduzione' },
+                { text: 'Workflow' , link: '/learn/tools/github/workflow' },
               ]
             },
-            { text: 'Errors and Exceptions', link: '/learn/programming_languages/python/errors_and_exceptions' },
+            {
+              text: 'Visual Studio Code',
+              items: [
+                { text: 'Home', link: './' },
+                { text: 'Task', link: './task' },
+              ]
+            }
           ]
         }
       ],
-      '/learn/tools/github/': [
+      '/learn/frameworks/': [
         {
-          text: 'GitHub',
+          text: 'Frameworks',
           items: [
-            { text: 'Home', link: '/learn/tools/github/.' },
-            { text: 'Introduction', link: '/learn/tools/github/introduction' },
-            { text: 'Workflow' , link: '/learn/tools/github/workflow' },
-          ]
-        }
-      ],
-      '/learn/tools/vscode/': [
-        {
-          text: 'Visual Studio Code',
-          items: [
-            { text: 'Home', link: './' },
-            { text: 'Task', link: './task' },
-          ]
-        }
-      ],
-      '/learn/frameworks/GraphQL/': [
-        {
-          text: 'GraphQL',
-          items: [
-            { text: 'Home', link: '/learn/frameworks/GraphQL/' },
-            { text: 'Introduction', link: '/learn/frameworks/GraphQL/introduction' },
+            {
+              text: 'GraphQL',
+              items: [
+                { text: 'Home', link: '/learn/frameworks/GraphQL/' },
+                { text: 'Introduction', link: '/learn/frameworks/GraphQL/introduction' },
+              ]
+            },
+            {
+              text: 'Django',
+              items: [
+                { text: 'Home', link: '/learn/frameworks/Django/' },
+              ]
+            }
           ]
         }
       ]
