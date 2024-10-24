@@ -93,124 +93,96 @@ export const itConfig = {
           ]
         }
       ],
-      '/it/learn/programming_languages/': [
+      '/it/learn/programming_languages/python/': [
         {
-          text: 'Programming Languages',
+          text: 'Python',
           items: [
-            {
-              text: 'Python',
+            { text: 'Home', link: '/it/learn/programming_languages/python/' },
+            { 
+              text: 'Strutture Dati',
+              collapsed: true,
+              link: '/it/learn/programming_languages/python/strutture_dati/',
               items: [
-                { text: 'Home', link: '/it/learn/programming_languages/python/' },
-                { 
-                  text: 'Strutture Dati',
-                  collapsed: true,
-                  link: '/it/learn/programming_languages/python/strutture_dati/',
-                  items: [
-                    { text: 'Introduzione', link: '/it/learn/programming_languages/python/strutture_dati/' },
-                    { text: 'Sequenze', link: '/it/learn/programming_languages/python/strutture_dati/sequence' },
-                  ]
-                },
-                { 
-                  text: 'Moduli', 
-                  link: '/it/learn/programming_languages/python/modules/',
-                  collapsed: true,
-                  items: [
-                    { text: 'Introduzione', link: '/it/learn/programming_languages/python/modules/' },
-                    { text: 'Namespace', link: '/it/learn/programming_languages/python/modules/namespace' },
-                    { text: 'Import', link: '/it/learn/programming_languages/python/modules/import' },
-                    { 
-                      text: 'Standard Modules', 
-                      collapsed: true,
-                      link: '/it/learn/programming_languages/python/modules/standard_modules/',
-                      items: [
-                        { text: 'Random', link: '/it/learn/programming_languages/python/modules/standard_modules/random' },
-                        { text: 'Platform', link: '/it/learn/programming_languages/python/modules/standard_modules/platform' },
-                      ]
-                    },
-                    { text: 'Package', link: '/it/learn/programming_languages/python/modules/package' },
-                    { text: 'PIP', link: '/it/learn/programming_languages/python/modules/pip' },
-                  ]
-                },
-                {
-                  text: 'Stringhe',
-                  collapsed: true,
-                  link: '/it/learn/programming_languages/python/strings/',
-                  items: [
-                    { text: 'Introduzione', link: '/it/learn/programming_languages/python/strings/' },
-                    { text: 'ASCII', link: '/it/learn/programming_languages/python/strings/ASCII' },
-                    { text: 'Unicode', link: '/it/learn/programming_languages/python/strings/unicode' },
-                    { text: 'Stringhe Python', link: '/it/learn/programming_languages/python/strings/python_strings' },
-                    { text: 'Metodi Stringhe', link: '/it/learn/programming_languages/python/strings/strings_method' },
-                  ]
-                },
-                {
-                  text: 'Eccezioni',
-                  collapsed: true,
-                  link: '/it/learn/programming_languages/python/exceptions/',
-                  items: [
-                    { text: 'Introduzione', link: '/it/learn/programming_languages/python/exceptions/' },
-                    { text: 'BaseException', link: '/it/learn/programming_languages/python/exceptions/BaseException' },
-                 
-                  ]
-                },
-                {
-                  text: 'OOP',
-                  collapsed: true,
-                  link: '/it/learn/programming_languages/python/oop/',
-                  items: [
-                    { text: 'Introduzione', link: '/it/learn/programming_languages/python/oop/' },
-                    { text: 'Esempi', link: '/it/learn/programming_languages/python/oop/esempi' },
-                    { text: 'Variabili di Istanza', link: '/it/learn/programming_languages/python/oop/variabili-di-istanza' },
-                    { text: 'Variabili di Classe', link: '/it/learn/programming_languages/python/oop/variabili-di-classe' },
-                    { text: 'hasattr', link: '/it/learn/programming_languages/python/oop/hasattr' },
-                    { text: 'Metodi', link: '/it/learn/programming_languages/python/oop/metodi' },
-                 
-                  ]
-                },
+                { text: 'Introduzione', link: '/it/learn/programming_languages/python/strutture_dati/' },
+                { text: 'Sequenze', link: '/it/learn/programming_languages/python/strutture_dati/sequence' },
               ]
-            }
-          ]
-        }
-      ],
-      '/it/learn/tools/': [
-        {
-          text: 'Tools',
-          items: [
-            {
-              text: 'GitHub',
+            },
+            { 
+              text: 'Moduli', 
+              link: '/it/learn/programming_languages/python/modules/',
+              collapsed: true,
               items: [
-                { text: 'Home', link: '/learn/tools/github/.' },
-                { text: 'Introduzione', link: '/learn/tools/github/introduzione' },
-                { text: 'Workflow' , link: '/learn/tools/github/workflow' },
+                { text: 'Introduzione', link: '/it/learn/programming_languages/python/modules/' },
+                { text: 'Namespace', link: '/it/learn/programming_languages/python/modules/namespace' },
+                { text: 'Import', link: '/it/learn/programming_languages/python/modules/import' },
+                { 
+                  text: 'Standard Modules', 
+                  collapsed: true,
+                  link: '/it/learn/programming_languages/python/modules/standard_modules/',
+                  items: [
+                    { text: 'Random', link: '/it/learn/programming_languages/python/modules/standard_modules/random' },
+                    { text: 'Platform', link: '/it/learn/programming_languages/python/modules/standard_modules/platform' },
+                  ]
+                },
+                { text: 'Package', link: '/it/learn/programming_languages/python/modules/package' },
+                { text: 'PIP', link: '/it/learn/programming_languages/python/modules/pip' },
               ]
             },
             {
-              text: 'Visual Studio Code',
+              text: 'Stringhe',
+              collapsed: true,
+              link: '/it/learn/programming_languages/python/strings/',
               items: [
-                { text: 'Home', link: './' },
-                { text: 'Task', link: './task' },
-              ]
-            }
-          ]
-        }
-      ],
-      '/it/learn/frameworks/': [
-        {
-          text: 'Frameworks',
-          items: [
-            {
-              text: 'GraphQL',
-              items: [
-                { text: 'Home', link: '/learn/frameworks/GraphQL/' },
-                { text: 'Introduzione', link: '/learn/frameworks/GraphQL/introduction' },
+                { text: 'Introduzione', link: '/it/learn/programming_languages/python/strings/' },
+                { text: 'ASCII', link: '/it/learn/programming_languages/python/strings/ASCII' },
+                { text: 'Unicode', link: '/it/learn/programming_languages/python/strings/unicode' },
+                { text: 'Stringhe Python', link: '/it/learn/programming_languages/python/strings/python_strings' },
+                { text: 'Metodi Stringhe', link: '/it/learn/programming_languages/python/strings/strings_method' },
               ]
             },
             {
-              text: 'Django',
+              text: 'Eccezioni',
+              collapsed: true,
+              link: '/it/learn/programming_languages/python/exceptions/',
               items: [
-                { text: 'Home', link: '/learn/frameworks/Django/' },
+                { text: 'Introduzione', link: '/it/learn/programming_languages/python/exceptions/' },
+                { text: 'BaseException', link: '/it/learn/programming_languages/python/exceptions/BaseException' },
+             
               ]
-            }
+            },
+            {
+              text: 'OOP',
+              collapsed: true,
+              link: '/it/learn/programming_languages/python/oop/',
+              items: [
+                { text: 'Introduzione', link: '/it/learn/programming_languages/python/oop/' },
+                { text: 'Esempi', link: '/it/learn/programming_languages/python/oop/esempi' },
+                { text: 'Variabili di Istanza', link: '/it/learn/programming_languages/python/oop/variabili-di-istanza' },
+                { text: 'Variabili di Classe', link: '/it/learn/programming_languages/python/oop/variabili-di-classe' },
+                { text: 'hasattr', link: '/it/learn/programming_languages/python/oop/hasattr' },
+                { text: 'Metodi', link: '/it/learn/programming_languages/python/oop/metodi' },
+             
+              ]
+            },
+          ]
+        }
+      ],
+      '/it/learn/tools/github/': [
+        {
+          text: 'GitHub',
+          items: [
+            { text: 'Home', link: '/learn/tools/github/.' },
+            { text: 'Introduzione', link: '/learn/tools/github/introduzione' },
+            { text: 'Workflow' , link: '/learn/tools/github/workflow' },
+          ]
+        }
+      ],
+      'it/learn/tools/vscode/': [
+        {
+          text: 'Visual Studio Code',
+          items: [
+            { text: 'Home', link: './' },
+            { text: 'Task', link: './task' },
           ]
         }
       ]
