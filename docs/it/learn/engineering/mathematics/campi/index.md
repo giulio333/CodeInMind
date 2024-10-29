@@ -4,8 +4,6 @@ Un **campo** è una struttura algebrica che soddisfa alcune proprietà particola
 
 Iniziamo prendendo come riferimento l'insieme dei numeri **Razionali** $\mathbb{Q}$ elencando alcune proprietà che soddisfa:
 
-E' definita in $\mathbb{Q}$ l'operazione di somma $+$ che ha le seguenti proprietà.
-
 ## Proprietà ${R_1}$
 
 Viene definita in $\mathbb{Q}$ un'operazione, detta **somma**, con le seguenti proprietà:
