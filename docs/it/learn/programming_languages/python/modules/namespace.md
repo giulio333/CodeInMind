@@ -44,7 +44,7 @@ graph TD
     A["Nome richiesto"] --> B["Namespace Locale"]
     B -->|Trovato| C["Usa Nome"]
     B -->|Non trovato| D["Namespace Globale"]
-    D -->|Trovato| C["Usa Nome"]
+    D -->|Trovato| C["Usa Nome"]    
     D -->|Non trovato| E["Namespace Integrato"]
     E -->|Trovato| C["Usa Nome"]
     E -->|Non trovato| F["Errore: NameError"]
@@ -53,5 +53,3 @@ graph TD
 
 > Attenzione!
 >   Quando Python importa il contenuto di un modulo, **tutti i nomi** definiti nel modulo diventano conosciuti, ma non entrano ancora nel **namespace**!
-
-Questo significa che puoi avere le tue entità chiamate sin o pi, e non saranno influenzate dall’import in alcun modo.
